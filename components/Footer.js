@@ -91,18 +91,6 @@ export default function Footer() {
           </Link>
           .
         </div>
-        <div className="py-4">
-          © {new Date().getFullYear()} The Linux Foundation. All rights reserved. The Linux
-          Foundation has registered trademarks and uses trademarks. For a list of trademarks of The
-          Linux Foundation, please see our{" "}
-          <Link
-            href="https://www.linuxfoundation.org/legal/trademark-usage"
-            className="text-white hover:brightness-90 hover:underline"
-          >
-            Trademark Usage page
-          </Link>
-          .
-        </div>
       </div>
     </footer>
   );
