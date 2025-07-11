@@ -80,9 +80,9 @@ export default function Footer() {
           .
         </div>
         <div>Copyright © {new Date().getFullYear()} The Runme Authors. All rights reserved.</div>
+        <div>Copyright © Runme Notebooks a Series of LF Projects, LLC</div>
         <div>
-          Copyright © Runme Notebooks a Series of LF Projects, LLC For website terms of use,
-          trademark policy and other project policies please see{" "}
+          For website terms of use, trademark policy and other project policies please see{" "}
           <Link
             href="https://lfprojects.org/policies/"
             className="text-white hover:brightness-90 hover:underline"
