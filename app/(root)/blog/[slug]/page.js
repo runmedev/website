@@ -1,5 +1,5 @@
 import SocialIcons from "@/components/SocialIcons";
-import moment from "moment";
+import { format } from "date-fns";
 import Link from "next/link";
 import { faTag } from "@fortawesome/free-solid-svg-icons";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
@@ -101,7 +101,7 @@ export default async function BlogSlug({ params }) {
             {"< Back"}
           </Link>
           <div className="font-medium text-neutral-600">
-            {moment(post?.date).format("MMMM D, YYYY")}
+            {format(new Date(post?.date), "MMMM d, yyyy")}
           </div>
           <div className="flex flex-row items-center space-x-2">
             <div className="text-purpleish-500">

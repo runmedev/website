@@ -2,7 +2,7 @@ import AuthorImage from "@/components/AuthorImage";
 import Link from "next/link";
 import PostImage from "@/components/PostImage";
 import SocialIcons from "@/components/SocialIcons";
-import moment from "moment";
+import { format } from "date-fns";
 import { fetchFsPosts } from "utils/fetchFsPosts";
 import { frontToPreview } from "utils/postUtils";
 import matter from "gray-matter";
@@ -53,7 +53,7 @@ const Post = ({ post }) => {
 
       <div className="px-6 pt-2 pb-4">
         <div className="my-4 font-medium text-neutral-500">
-          {moment(post?.date).format("MMMM D, YYYY")}
+          {format(new Date(post?.date), "MMMM d, yyyy")}
         </div>
         <Link
           href={slug}
@@ -112,7 +112,7 @@ const FirstPost = ({ post }) => {
             </div>
           )}
           <div className="border-r border-neutral-500">&nbsp;</div>
-          <div className="text-neutral-400">{moment(post?.date).format("MMMM D, YYYY")}</div>
+          <div className="text-neutral-400">{format(new Date(post?.date), "MMMM d, yyyy")}</div>
         </div>
         <div>
           <Link href={slug}>
