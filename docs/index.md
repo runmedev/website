@@ -33,7 +33,7 @@ $ npm install
 
 Take into account whether you want `draft` content coming from hygraph, which is configured by an environment variable, and if you want to see the latest project statistics which comes from an endpoint in [val.town(https://val.town)] that requires a valid github token. Then run the server.
 
-```sh {"background":"true","id":"01HH2AHC9W4AR0YAWB0HV4Q80P","name":"start","promptEnv":"never"}
+```sh {"background":"true","id":"01HH2AHC9W4AR0YAWB0HV4Q80P","name":"dev","promptEnv":"never"}
 export GITHUB_TOKEN=$(gh auth token)
 export NEXT_PUBLIC_STAGE="DRAFT"
 $ npm run dev
