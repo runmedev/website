@@ -1,0 +1,13 @@
+apiVersion: backstage.io/v1alpha1
+kind: Component
+metadata:
+  name: runme.dev
+  namespace: stateful
+  description: Runme website
+  annotations:
+    github.com/project-slug: stateful/runme.dev
+    backstage.io/techdocs-ref: dir:.
+spec:
+  type: website
+  owner: user:stateful/admc
+  lifecycle: production

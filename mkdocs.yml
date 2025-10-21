@@ -1,0 +1,9 @@
+site_name: "Runme.dev"
+nav:
+  - Getting started: index.md
+
+plugins:
+  - techdocs-core
+  - runme:
+      repository: git@github.com:stateful/platform.git
+      docs_dir: docs

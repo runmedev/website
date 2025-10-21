@@ -1,0 +1,62 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+html,
+body {
+  padding: 0;
+  margin: 0;
+  scroll-behavior: smooth !important;
+  @apply h-full;
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+}
+
+h1,
+h2,
+p,
+ul {
+  margin: 0;
+}
+
+ul {
+  padding: 0;
+  list-style: none;
+}
+
+button {
+  padding: 0.5rem 1rem;
+  font-weight: bold;
+}
+
+.travel-line {
+  width: 2px;
+  height: 200px;
+  stroke: #000;
+  fill: none;
+  stroke-dasharray: 4;
+  stroke-width: 2;
+}
+
+.grid-corners {
+  display: grid;
+  grid-template-columns: auto auto;
+  justify-content: space-between;
+  align-content: space-between;
+}
+
+a[data-nextui="button"][data-variant="flat"] {
+  color: #e0e6f0 !important;
+}

@@ -1,0 +1,4 @@
+.content a {
+    @apply font-semibold text-purple-600 hover:underline;
+}
+  
