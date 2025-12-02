@@ -1,9 +1,9 @@
 "use client";
 import { GoogleAnalytics } from "nextjs-google-analytics";
-import useKoalaScript from "hooks/useKoalaScript";
+// import useKoalaScript from "hooks/useKoalaScript";
 
 const Tags = () => {
-  useKoalaScript();
+  // useKoalaScript();
 
   return (
     <>
