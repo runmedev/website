@@ -1,5 +1,5 @@
 "use client";
-import { track } from "@vercel/analytics";
+// import { track } from "@vercel/analytics";
 import { Button } from "@nextui-org/react";
 
 const PlaygroundButton = () => {
@@ -12,9 +12,9 @@ const PlaygroundButton = () => {
         auto
         className="tracking-widest w-full md:w-auto"
         variant="solid"
-        onPress={() => {
-          track("clicked playground button");
-        }}
+        // onPress={() => {
+        //   track("clicked playground button");
+        // }}
       >
         Try Runme now (sandbox)
       </Button>

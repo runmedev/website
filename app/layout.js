@@ -8,7 +8,7 @@ import {
   Lato,
   Roboto_Slab,
 } from "next/font/google";
-import { Analytics } from "@vercel/analytics/react";
+// import { Analytics } from "@vercel/analytics/react";
 
 import Tags from "@/components/Tags";
 import { Providers } from "@/components/Providers";
@@ -118,7 +118,7 @@ export default function RootLayout({ children }) {
         <div className="bg-background-dark text-text-dark">
           <Providers>
             <main className="flex-1">{children}</main>
-            <Analytics />
+            {/* <Analytics /> */}
           </Providers>
         </div>
       </body>
