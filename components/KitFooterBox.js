@@ -2,7 +2,7 @@
 
 import React, { useEffect, useRef } from "react";
 
-const ConvertFooterBox = () => {
+const KitFooterBox = () => {
   const scriptContainerRef = useRef(null);
 
   useEffect(() => {
@@ -30,4 +30,4 @@ const ConvertFooterBox = () => {
   );
 };
 
-export default ConvertFooterBox;
+export default KitFooterBox;

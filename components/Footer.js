@@ -1,4 +1,4 @@
-import ConvertFooterBox from "@/components/ConvertFooterBox";
+import KitFooterBox from "@/components/KitFooterBox";
 import Image from "next/image";
 import Link from "next/link";
 
@@ -28,7 +28,7 @@ export default function Footer() {
         <div className="flex flex-col space-y-6 text-center md:text-left md:space-y-0 md:flex-row justify-evenly">
           <div className="flex flex-col justify-center space-y-2">
             <div className="font-semibold text-center">Subscribe for updates</div>
-            <ConvertFooterBox />
+            <KitFooterBox />
           </div>
 
           <FooterRow title="Runme">
