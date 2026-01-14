@@ -108,6 +108,11 @@ const Metrics = async () => {
 
   return (
     <div className="max-w-3xl pt-8 mx-auto w-full">
+      <div className="flex justify-center mb-6">
+        <a href="https://www.bestpractices.dev/projects/11778">
+          <img src="https://www.bestpractices.dev/projects/11778/badge" />
+        </a>
+      </div>
       <div className="flex flex-col justify-around space-y-6 md:space-y-0 md:flex-row">
         <MetricEntry title={metricsMap.installs.fmt}>
           <FontAwesomeIcon icon={faArrowDown} className="h-[20px] w-[20px]" />
