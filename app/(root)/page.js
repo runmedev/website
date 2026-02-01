@@ -273,19 +273,12 @@ const Community = () => {
 const Hero = () => {
   return (
     <div className="flex flex-col space-y-3 text-center px-4 md:px-0">
-      {/* <div className="mx-4 flex flex-row items-center justify-center gap-x-6 pb-2">
-        <a href="https://events.linuxfoundation.org/kubecon-cloudnativecon-north-america">
-          <div className="mx-auto cursor-pointer truncate whitespace-normal rounded-full border border-yellow-600 px-4 py-1 text-sm hover:bg-neutral-900">
-            We&apos;ll be a KubeCon November 12-15. Join us at{" "}
-            <span className="font-semibold">booth S51!</span>
-          </div>
-        </a>
-      </div> */}
-      {/* <a href="/blog/rollup-terminals">
-        <div className="mx-auto max-w-min truncate cursor-pointer whitespace-nowrap rounded-full border border-yellow-600 px-4 py-1 text-md hover:bg-neutral-900">
-          <span className="font-semibold">BLOG:</span> Roll up Terminals Into A Knowledge Base
+      <a href="https://visr.dev/" target="_blank" rel="noopener noreferrer">
+        <div className="mx-auto max-w-[16rem] cursor-pointer whitespace-normal text-center md:whitespace-nowrap md:max-w-min rounded-full border border-yellow-400 px-4 py-1 text-sm text-gray-200 hover:bg-neutral-900">
+          Reliable workflows for your agents, powered by notebooks →{" "}
+          <span className="font-semibold text-yellow-400">visr.dev</span>
         </div>
-      </a> */}
+      </a>
       <h1 className="font-plexSans text-3xl sm:text-4xl md:text-[56px] text-center md:leading-tight tracking-wider">
         DevOps Notebooks
         <div>Built with Markdown</div>
