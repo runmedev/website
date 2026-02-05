@@ -274,8 +274,8 @@ const Hero = () => {
   return (
     <div className="flex flex-col space-y-3 text-center px-4 md:px-0">
       <a href="https://visr.dev/" target="_blank" rel="noopener noreferrer">
-        <div className="mx-auto max-w-[16rem] cursor-pointer whitespace-normal text-center md:whitespace-nowrap md:max-w-min rounded-full border border-yellow-400 px-4 py-1 text-sm text-gray-200 hover:bg-neutral-900">
-          Reliable workflows for your agents, powered by notebooks →{" "}
+        <div className="mx-auto w-fit cursor-pointer whitespace-nowrap rounded-full border border-yellow-400 px-4 py-1 text-base text-gray-200 hover:bg-neutral-900">
+          Runbooks for the agent era →{" "}
           <span className="font-semibold text-yellow-400">visr.dev</span>
         </div>
       </a>
