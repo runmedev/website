@@ -6,7 +6,8 @@
     "build": "next build",
     "start": "next start",
     "start:prod": "npm run dev",
-    "postbuild": "next-sitemap"
+    "postbuild": "next-sitemap",
+    "type-check": "tsc --noEmit"
   },
   "engines": {
     "node": ">=22.0.0"
@@ -47,7 +48,10 @@
     "vercel": "^39.0.3"
   },
   "devDependencies": {
+    "@types/cookie": "^0.6.0",
     "@types/node": "^20.19.23",
+    "@types/react": "^19.2.13",
+    "@types/react-dom": "^19.2.3",
     "autoprefixer": "^10.4.15",
     "encoding": "^0.1.13",
     "postcss": "^8.4.31",
