@@ -57,7 +57,6 @@ export const Header: React.FC = () => {
       ],
     },
     { text: "Blog", href: "/blog" },
-    { text: "Cloud", href: "/cloud" },
   ];
 
   return (
