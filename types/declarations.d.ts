@@ -42,6 +42,23 @@ declare module 'react-google-recaptcha' {
   }
 }
 
+declare module 'react-loader-spinner' {
+  import { ComponentType, CSSProperties } from 'react';
+
+  export interface TailSpinProps {
+    height?: string | number;
+    width?: string | number;
+    color?: string;
+    ariaLabel?: string;
+    radius?: string | number;
+    wrapperStyle?: CSSProperties;
+    wrapperClass?: string;
+    visible?: boolean;
+  }
+
+  export const TailSpin: ComponentType<TailSpinProps>;
+}
+
 declare module 'ua-parser-js' {
   interface IResult {
     ua: string;
