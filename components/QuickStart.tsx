@@ -2,7 +2,10 @@
 import Link from "next/link";
 
 import { QuickShell } from "@/components/QuickShell";
-import UAParser from "ua-parser-js";
+// ua-parser-js v2 exposes this named ESM export, while its bundled types
+// still model the package as export= for CommonJS consumers.
+// @ts-expect-error see comment above
+import { UAParser } from "ua-parser-js";
 import { useEffect, useState } from "react";
 import { Button } from "@nextui-org/react";
 

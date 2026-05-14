@@ -4,7 +4,7 @@ import { MDXRemote } from "next-mdx-remote/rsc";
 import CareerPitch from "@/components/CareerPitch";
 import CareerDisclaimer from "@/components/CareerDisclaimer";
 
-import "/styles/markdown.css";
+import "@/styles/markdown.css";
 
 interface Job {
   body: string;

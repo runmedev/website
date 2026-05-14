@@ -1,4 +1,4 @@
-import "/styles/markdown.css";
+import "@/styles/markdown.css";
 import Command from "@/components/Command";
 import BeforeYouGo from "@/components/BeforeYouGo";
 import ExtensionCTA from "@/components/ExtensionCTA";
