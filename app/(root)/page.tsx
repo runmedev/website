@@ -310,9 +310,9 @@ const Hero = () => {
           <span className="rounded-full bg-yellow-400/90 px-2 py-0.5 text-xs font-semibold uppercase tracking-wide text-black ring-1 ring-yellow-300/50">
             New
           </span>
-          <span>Visr turns terminal sessions into agent-ready runbooks</span>
+          <span>Visr turns terminal sessions into agent-ready notebooks</span>
           <span className="rounded-full bg-yellow-400/80 px-3 py-1 font-semibold text-black ring-1 ring-yellow-300/55 transition group-hover:bg-yellow-300/90">
-            Create your first runbook →
+            Create your first notebook →
           </span>
         </div>
       </a>
