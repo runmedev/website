@@ -301,7 +301,7 @@ const Hero = () => {
   return (
     <div className="flex flex-col space-y-3 text-center px-4 md:px-0">
       <a
-        href="https://console.visr.dev/?utm_source=runme.dev&utm_medium=website&utm_campaign=hero_banner"
+        href="https://visr.dev/?utm_source=runme.dev&utm_medium=website&utm_campaign=hero_banner"
         target="_blank"
         rel="noopener noreferrer"
         className="group mx-auto inline-flex max-w-full items-center justify-center"
@@ -310,9 +310,9 @@ const Hero = () => {
           <span className="rounded-full bg-yellow-400/90 px-2 py-0.5 text-xs font-semibold uppercase tracking-wide text-black ring-1 ring-yellow-300/50">
             New
           </span>
-          <span>Visr turns terminal sessions into agent-ready runbooks</span>
+          <span>Visr turns terminal sessions into agent-ready notebooks</span>
           <span className="rounded-full bg-yellow-400/80 px-3 py-1 font-semibold text-black ring-1 ring-yellow-300/55 transition group-hover:bg-yellow-300/90">
-            Create your first runbook →
+            Create your first notebook →
           </span>
         </div>
       </a>
