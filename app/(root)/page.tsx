@@ -301,7 +301,7 @@ const Hero = () => {
   return (
     <div className="flex flex-col space-y-3 text-center px-4 md:px-0">
       <a
-        href="https://console.visr.dev/?utm_source=runme.dev&utm_medium=website&utm_campaign=hero_banner"
+        href="https://visr.dev/?utm_source=runme.dev&utm_medium=website&utm_campaign=hero_banner"
         target="_blank"
         rel="noopener noreferrer"
         className="group mx-auto inline-flex max-w-full items-center justify-center"
