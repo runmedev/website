@@ -52,7 +52,7 @@ export const Header: React.FC = () => {
       href: "/community",
       subItems: [
         { text: "GitHub", href: "https://github.com/stateful/runme" },
-        { text: "Discord", href: "https://discord.gg/runme" },
+        { text: "Discord", href: "https://discord.gg/jFy92yxT" },
         { text: "Email Updates", href: "/list" },
       ],
     },

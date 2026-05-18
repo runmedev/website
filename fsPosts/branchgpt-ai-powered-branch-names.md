@@ -123,6 +123,6 @@ $ brew install runme && runme branchGPT # on macOS (homebrew)
 
 # Closing Thoughts
 
-Writing this post, one question I wish I had more color on: Do Merge Commits have a bad rep? Most folks I have asked sorted into the `Squash & Merge™️` or `Rebase & Merge™️` camps. Who else appreciates Merge Commits? Just me? Tell us [on Discord](https://discord.gg/runme) or ask about a feature request. For more content like this, please subscribe to [our email updates](https://stateful.com/newsletter).
+Writing this post, one question I wish I had more color on: Do Merge Commits have a bad rep? Most folks I have asked sorted into the `Squash & Merge™️` or `Rebase & Merge™️` camps. Who else appreciates Merge Commits? Just me? Tell us [on Discord](https://discord.gg/jFy92yxT) or ask about a feature request. For more content like this, please subscribe to [our email updates](https://stateful.com/newsletter).
 
 Hopefully, BranchGPT will make you like Merge Commits more 😆.

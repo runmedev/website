@@ -77,7 +77,7 @@ Outside the more prominent benefits of Dagger, such as superior caching on the a
 
 We love typing so much (and DevOps does need more of it) that we have been working on a Type System for Environments that will let you specify, validate, and contextually (user/workload/device identity, etc.) resolve Environment Variables while simultaneously maintaining a high bar for security hygiene.
 
-The project, called Owl Store, draws inspiration from the SSH Agent and the relationship between Typescript and Javascript and aims to seamlessly plug into the ecosystem. [Hop on Discord](https://discord.gg/runme) and ask us about it. We will be blogging about it soon.
+The project, called Owl Store, draws inspiration from the SSH Agent and the relationship between Typescript and Javascript and aims to seamlessly plug into the ecosystem. [Hop on Discord](https://discord.gg/jFy92yxT) and ask us about it. We will be blogging about it soon.
 
 <video className="rounded-md border-solid border-2" autoPlay loop muted playsInline controls>
     <source src="/img/blog/runme-for-dagger-a6.jpg" type="video/mp4" />
@@ -89,6 +89,6 @@ The project, called Owl Store, draws inspiration from the SSH Agent and the rela
 
 If you haven’t yet, check out Runme’s Dagger integration. After you’ve [installed Dagger](https://docs.dagger.io/install) using their setup instructions [here’s a simple example](https://github.com/stateful/vscode-runme/blob/main/dagger/README.md) of how to build Runme’s kernel binary and the VS Code integration.
 
-Please let us know your thoughts [on Discord](https://discord.gg/runme) and [give us a star on GitHub](https://github.com/stateful/runme)! Thank you.
+Please let us know your thoughts [on Discord](https://discord.gg/jFy92yxT) and [give us a star on GitHub](https://github.com/stateful/runme)! Thank you.
 
 <ExtensionCTA label="Install Runme" extension="runme" />

@@ -237,7 +237,7 @@ const RoadShowUI: React.FC<RoadShowUIProps> = ({ shows }) => {
               operators.
             </div>
 
-            <Link href="https://discord.gg/runme">
+            <Link href="https://discord.gg/jFy92yxT">
               <button className="text-[16px] px-8 py-2 rounded font-medium tracking-widest bg-purple-next-button hover:brightness-90">
                 Join us on Discord
               </button>

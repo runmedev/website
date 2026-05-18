@@ -64,7 +64,7 @@ These Runme terminal sessions are special for two reasons:
 1. Once you `exit` the terminal, all exported environment variables (e.g., `export MY_NAME=Seb`) will roll up into your session’s env store, which is shared between notebooks and terminals. More on this below.
 2. Optionally, and this is where I’m fulfilling my promise, you can type `save` (an alias of `exit`) to instruct Runme to jumpstart a brand-new notebook capturing a copy of your terminal session.
 
-> 💡 Please note that Runme Terminal is currently in `beta`. On first use, Runme will prompt you to switch to `v2` (beta) while we finalize these features. Feedback in, e.g., [Discord](https://discord.gg/runme) is appreciated.
+> 💡 Please note that Runme Terminal is currently in `beta`. On first use, Runme will prompt you to switch to `v2` (beta) while we finalize these features. Feedback in, e.g., [Discord](https://discord.gg/jFy92yxT) is appreciated.
 
 <ExtensionCTA label="Install Runme" extension="runme" />
 
@@ -154,4 +154,4 @@ From here on out, it’s just a matter of light editing to make those steps repr
 
 Learn how Runme’s advanced features [in the docs](https://docs.runme.dev) let you solve common challenges such as locking system/environment dependencies via Opscontainers (aka [Devcontainers](https://containers.dev)), helpful use of auto-prompting to make docs generic, inlining Cloud Resources from AWS, GCP, or GitHub, and so much more—all open source.
 
-Try it now, [join our Discord](https://discord.gg/runme) to provide feedback, and may the force be with you!
+Try it now, [join our Discord](https://discord.gg/jFy92yxT) to provide feedback, and may the force be with you!

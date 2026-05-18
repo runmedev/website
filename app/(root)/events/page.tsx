@@ -38,7 +38,7 @@ export default async function EventsHome() {
           <ul className="ml-6 list-disc">
             <li>
               Runme Community Hour (August 1, 2023){" "}
-              <Link href="https://discord.gg/runme">on Discord</Link>
+              <Link href="https://discord.gg/jFy92yxT">on Discord</Link>
             </li>
           </ul>
         </div>

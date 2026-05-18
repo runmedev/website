@@ -84,7 +84,7 @@ If you are asking yourself why we would choose to write a separate Session Outpu
 - The file separation also gets ahead of accidentally checking in outputs into version control and accidental overwriting of historical session artifacts if they reside in the same file.
 - Session files with outputs won’t open in the notebook UX. Runme won’t be able to discern what parts are input or output belonging to a cell after the output is written. The UX will prompt to open the original document in the same folder or launch the markdown previewer for Session Outputs.
 
-While we’re considering adding transparent opening of Session Outputs files in the future, it will almost inevitably require reformatting the source file as part of de-/serialization. However, if and when this becomes a priority on Runme’s roadmap, it will most likely be an optional feature. If you have thoughts or ideas about this, [please get in touch](https://discord.gg/runme).
+While we’re considering adding transparent opening of Session Outputs files in the future, it will almost inevitably require reformatting the source file as part of de-/serialization. However, if and when this becomes a priority on Runme’s roadmap, it will most likely be an optional feature. If you have thoughts or ideas about this, [please get in touch](https://discord.gg/jFy92yxT).
 
 Outside of capturing outputs, we are also working on adding emitting OpenTelemetry traces to standard-compliant collectors into Runme. This will allow Runme users to put output artifacts into the context of time and location, harnessing broadly available OpenTelemetry tooling. Curious how your team could benefit from Runme? [Click here](https://stateful.com/) to learn more.
 
@@ -103,7 +103,7 @@ If you have used prior versions of Runme, the changes in v3 are relatively subtl
 
 If you haven’t already, check out the video we made about Runme below. It does a terrific job explaining the core ideas behind it. If you have questions or feedback, please let us know.
 
-Enjoy and tell all your friends! See you [on Discord](https://discord.gg/runme).
+Enjoy and tell all your friends! See you [on Discord](https://discord.gg/jFy92yxT).
 
 <div className="max-w-screen-full mx-auto">
     <video

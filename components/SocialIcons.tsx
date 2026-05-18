@@ -20,7 +20,7 @@ const SocialLink: React.FC<SocialLinkProps> = ({ href, children }) => {
 const SocialIcons: React.FC = () => {
   return (
     <div className="flex flex-row items-center space-x-3">
-      <SocialLink href="https://discord.gg/runme">
+      <SocialLink href="https://discord.gg/jFy92yxT">
         <FontAwesomeIcon icon={faDiscord} size="lg" />
       </SocialLink>
       <SocialLink href="https://github.com/stateful/runme">

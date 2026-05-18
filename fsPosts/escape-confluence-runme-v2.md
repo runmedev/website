@@ -207,4 +207,4 @@ That's it.
 
 ## Join the Community
 
-As always, please join our [Discord server](https://discord.gg/runme) or file a [ticket on GitHub](https://github.com/stateful/runme/issues/new) with any questions or ideas you might have. We’re excited about Runme v2.0 and can’t wait to unlock more of Runme’s roadmap. If you haven't already, please [try Runme Playground](https://app.runme.dev/)’s cell saving and sharing.
+As always, please join our [Discord server](https://discord.gg/jFy92yxT) or file a [ticket on GitHub](https://github.com/stateful/runme/issues/new) with any questions or ideas you might have. We’re excited about Runme v2.0 and can’t wait to unlock more of Runme’s roadmap. If you haven't already, please [try Runme Playground](https://app.runme.dev/)’s cell saving and sharing.

@@ -141,4 +141,4 @@ Each **`runme run <task_name>`** command will execute the corresponding task, st
 
 By leveraging Runme, you can automate the essential security tasks for your ubuntu system, ensuring it remains updated, protected, and secure. This approach not only saves time but also reduces the risk of human error, providing peace of mind in a world where cybersecurity threats are constantly evolving. Remember, a secure system is the foundation of trust in the digital space. Stay vigilant and automate wisely!
 
-As always, please join our **[Discord server](https://discord.gg/runme)** or file a **[ticket on GitHub](https://github.com/stateful/runme/new)** with any questions or ideas you might have. If you haven't already, please **[try Runme](https://marketplace.visualstudio.com/items?itemName=stateful.runme)**. Thank you.
+As always, please join our **[Discord server](https://discord.gg/jFy92yxT)** or file a **[ticket on GitHub](https://github.com/stateful/runme/new)** with any questions or ideas you might have. If you haven't already, please **[try Runme](https://marketplace.visualstudio.com/items?itemName=stateful.runme)**. Thank you.
