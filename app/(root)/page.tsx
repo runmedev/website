@@ -306,13 +306,13 @@ const Hero = () => {
         rel="noopener noreferrer"
         className="group mx-auto inline-flex max-w-full items-center justify-center"
       >
-        <div className="flex flex-wrap items-center justify-center gap-2 rounded-full border border-yellow-400/65 bg-neutral-950/70 px-3 py-2 text-sm text-gray-200 shadow-lg shadow-yellow-400/15 hover:bg-neutral-900 md:px-4 md:text-base">
-          <span className="rounded-full bg-yellow-400/90 px-2 py-0.5 text-xs font-semibold uppercase tracking-wide text-black ring-1 ring-yellow-300/50">
+        <div className="flex flex-wrap items-center justify-center gap-2 rounded-full border border-yellow-400 bg-neutral-950/80 px-3 py-2 text-sm text-gray-200 shadow-lg shadow-yellow-400/30 hover:bg-neutral-900 md:px-4 md:text-base">
+          <span className="rounded-full bg-yellow-400 px-2 py-0.5 text-xs font-semibold uppercase tracking-wide text-black ring-1 ring-yellow-300">
             New
           </span>
-          <span>Visr turns terminal sessions into agent-ready notebooks</span>
-          <span className="rounded-full bg-yellow-400/80 px-3 py-1 font-semibold text-black ring-1 ring-yellow-300/55 transition group-hover:bg-yellow-300/90">
-            Create your first notebook →
+          <span>End terminal amnesia</span>
+          <span className="rounded-full bg-yellow-400 px-3 py-1 font-semibold text-black ring-1 ring-yellow-300 transition group-hover:bg-yellow-300">
+            Turn sessions into agent-ready skills →
           </span>
         </div>
       </a>
