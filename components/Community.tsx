@@ -33,7 +33,7 @@ const communityMap: CommunityMap = {
     ),
     icon: <FontAwesomeIcon icon={faDiscord} size="2xl" className="group-hover:text-[#7289da]" />,
     color: "text-[#7289da]",
-    href: "https://discord.gg/runme",
+    href: "https://discord.gg/jFy92yxT",
   },
   touch: {
     title: "Stay in touch",

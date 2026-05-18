@@ -334,4 +334,4 @@ Whoa, that was a lot.
 
 If you haven't used Runme yet, it's executable Notebooks for DevOps: [Click here](https://stateful.com/try) to launch a DevOps Notebook inside your browser. Easier experienced than explained.
 
-Again, let us know if any of this interests you. You can find us on [Runme’s Discord](https://discord.gg/runme). Thank you!
+Again, let us know if any of this interests you. You can find us on [Runme’s Discord](https://discord.gg/jFy92yxT). Thank you!

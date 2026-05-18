@@ -68,7 +68,7 @@ const metricsMap: MetricsMap = {
     title: "Discord Users",
     color: "text-[#7289da]",
     link: "Join Discord",
-    href: "https://discord.gg/runme",
+    href: "https://discord.gg/jFy92yxT",
     icon: <FontAwesomeIcon icon={faDiscord} size="xl" />,
   },
 };

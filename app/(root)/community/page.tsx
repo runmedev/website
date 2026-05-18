@@ -49,7 +49,7 @@ const COMMUNITY_SECTIONS: CommunitySection[] = [
     heading: "Connect with other developers about their tools",
     description:
       "Our Discord server is the best way to participate in our community. Bring your questions, requests, ideas, and showcases. Since Runme is Open Source, we are especially happy to help you get setup with the code and contribute.",
-    link: "https://discord.gg/runme",
+    link: "https://discord.gg/jFy92yxT",
   },
   {
     icon: (

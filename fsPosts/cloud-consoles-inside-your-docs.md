@@ -145,4 +145,4 @@ Today’s release comes with beta support for a sub-selection of AWS & GCP cloud
 
 <ExtensionCTA label="Install Runme" extension="runme" />
 
-Before you go, please give [**Runme a ⭐️ Star**](https://github.com/stateful/runme/stargazers) on GitHub and join [Runme's Discord](https://discord.gg/runme) to let the Runme team know what you think. Thank you!
+Before you go, please give [**Runme a ⭐️ Star**](https://github.com/stateful/runme/stargazers) on GitHub and join [Runme's Discord](https://discord.gg/jFy92yxT) to let the Runme team know what you think. Thank you!

@@ -61,7 +61,7 @@ export default function Footer(): React.ReactElement {
             <FooterEntry text="GitHub Action" href="/spotlight/embed-github-actions" />
           </FooterRow>
           <FooterRow title="social">
-            <FooterEntry text="Discord" href="https://discord.gg/runme" />
+            <FooterEntry text="Discord" href="https://discord.gg/jFy92yxT" />
             <FooterEntry text="Fosstodon" href="  https://fosstodon.org/@runmedev" />
             <FooterEntry text="Bsky" href="https://bsky.app/profile/runme.dev" />
             <FooterEntry text="X" href="https://twitter.com/runmedev" />

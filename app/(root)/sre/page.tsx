@@ -339,7 +339,7 @@ const Sre = () => {
             <FontAwesomeIcon icon={faXTwitter} size="xl" />
           </Link>
           <Link
-            href="https://discord.gg/runme"
+            href="https://discord.gg/jFy92yxT"
             className="hover:brightness-75"
             aria-label="Join us on Discord"
           >
