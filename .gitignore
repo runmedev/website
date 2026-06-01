@@ -48,3 +48,7 @@ public/sitemap.xml
 certificates
 # Local Netlify folder
 .netlify
+
+.agents/
+.claude/
+skills-lock.json
