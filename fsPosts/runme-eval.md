@@ -64,6 +64,8 @@ As with software tests, the author chooses the boundary of what is under test. T
 
 One task eval is not enough to prove the whole workflow. It is enough to start building regression pressure. That is how we already use small, sharply focused smoke and integration tests: not as exhaustive proof, but as durable checks for the failure modes that matter. Guillermo Rauch's old testing advice still fits: write tests, not too many, mostly integration [5]. A repo-local eval suite does not need hundreds or thousands of tasks before it is useful. Start with the task that captures a real failure mode, then add cases where the workflow breaks, drifts, or needs a promotion decision.
 
+![Guillermo Rauch tweet: Write tests. Not too many. Mostly integration.](/img/blog/runme-eval-rauch-testing-tweet.png)
+
 The `world-cup-picks-report` skill [6] makes a good showcase for that reason. It depends on a live subject, the 2026 World Cup, plus evidence that the skill activated, searched the web, used good sources close to its claims, covered the target slate and lineup status, followed the workflow in order, respected uncertainty guardrails, and produced a final artifact with a strict format. It is small enough to inspect, but it exercises the same moving parts as larger agent workflows.
 
 ### Own the Dataset's Rubric
@@ -155,7 +157,7 @@ In this case, the latest run was intentionally forced into a weaker configuratio
 
 ### Preview the Promotion
 
-To improve the result, edit the skill, adjust context files such as `CLAUDE.md` or `AGENTS.md`, change MCP server configuration, or rerun the eval hermetically with `--env docker` and a task-local Dockerfile before deciding what to promote.
+To improve the result, edit the skill, adjust context files such as `CLAUDE.md` or `AGENTS.md`, change MCP server configuration, or rerun the eval in a sandboxed environment with `--env docker` and a task-local Dockerfile before deciding what to promote.
 
 Before promoting a result, preview the evidence and the gate Runme would apply:
 
@@ -218,9 +220,9 @@ The promoted record becomes part of the project history. The important shift is 
 
 ## Differences between Runme and Harbor
 
-Harbor remains the underlying eval model and runner. It provides the task, dataset, trial, and job concepts that make agent evaluation concrete. Runme does not replace that; it brings the same model into the local development loop. The distinction is less "which benchmark framework should I use?" and more "where does this workflow live?"
+Harbor remains the underlying eval model and runner. It provides the task, dataset, trial, job, and artifact concepts that make agent evaluation concrete. Runme does not replace that; it standardizes on the same model and adds the local workflow mechanics around it. In that sense, `runme eval` is a practical superset for repo-local work: it knows how to stage a working directory, run the agent where the workflow already lives, and keep Harbor-shaped inputs and outputs.
 
-The inner loop and outer loop are not mutually exclusive. During development, the fast local loop matters because authors need to create, run, inspect, and improve tasks where the workflow already lives. When the same tasks need to run in CI or across a larger fleet, `--env docker` lets those trials use a containerized environment too.
+The inner loop and outer loop are not mutually exclusive. During development, the fast local loop matters because authors need to create, run, inspect, and improve tasks against real repo state. When the same tasks need to run in CI or across a larger fleet, the sandbox path stays open: `--env docker` lets those trials use a containerized environment too.
 
 Use Harbor when you are building or running benchmark-style agent evaluation infrastructure. Use `runme eval` when the thing you need to prove is already in a Git repo, already depends on local agent CLIs, and needs a lightweight path from task execution to dashboard inspection, baseline comparison, and Git-backed promotion evidence. The Runme docs describe this as filling the local workflow gap around Harbor's model [9].
 
@@ -231,6 +233,8 @@ The agent ecosystem is moving fast, but teams still need a boring answer to a pr
 That question cannot be answered by a single impressive transcript. It needs the same discipline we already expect from other project infrastructure. Capture the task. Run it in a repeatable way. Compare the result against what used to work. Promote the evidence when the change is worth keeping.
 
 That history matters even more across a heterogeneous user base. Once the task is captured, teams can compare more than one lucky run: model changes, reasoning effort, agent harnesses, local versus containerized environments, and other workflow choices all become part of the same evidence trail.
+
+The useful standard is not just the runner. It is the shared shape of the evidence: inputs, outputs, trajectories, artifacts, rewards, and scores. That gives teams a common place to improve rubrics and domain-specific evaluators, and it gives registries a way to show eval quality during discovery instead of asking users to trust a README.
 
 That is what the new experimental `runme eval` command group in Runme v3.17 is for. It gives teams a way to prove their AI workflows in the repos where those workflows already live.
 
