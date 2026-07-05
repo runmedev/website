@@ -62,13 +62,15 @@ Skills are still a useful starting point because they are bounded enough to insp
 
 As with software tests, the author chooses the boundary of what is under test. That boundary might be one skill, a full agent workflow, a tool integration, or the final artifact a team depends on. `runme eval` defaults to `./evals/tasks` because it assumes the common case is a task or workflow integration that belongs with the repo, not only a standalone skill artifact. You can still point it at a skill-specific eval directory; the boundary just needs to be explicit enough that the result can be rerun, compared, and improved.
 
-The `world-cup-picks-report` skill [5] makes a good showcase for that reason. It depends on a live subject, the 2026 World Cup, plus evidence that the skill activated, searched the web, used good sources close to its claims, covered the target slate and lineup status, followed the workflow in order, respected uncertainty guardrails, and produced a final artifact with a strict format. It is small enough to inspect, but it exercises the same moving parts as larger agent workflows.
+One task eval is not enough to prove the whole workflow. It is enough to start building regression pressure. That is how we already use small, sharply focused smoke and integration tests: not as exhaustive proof, but as durable checks for the failure modes that matter. Guillermo Rauch's old testing advice still fits: write tests, not too many, mostly integration [5]. A repo-local eval suite does not need hundreds or thousands of tasks before it is useful. Start with the task that captures a real failure mode, then add cases where the workflow breaks, drifts, or needs a promotion decision.
+
+The `world-cup-picks-report` skill [6] makes a good showcase for that reason. It depends on a live subject, the 2026 World Cup, plus evidence that the skill activated, searched the web, used good sources close to its claims, covered the target slate and lineup status, followed the workflow in order, respected uncertainty guardrails, and produced a final artifact with a strict format. It is small enough to inspect, but it exercises the same moving parts as larger agent workflows.
 
 ### Own the Dataset's Rubric
 
 The important part is the domain-specific rubric. The framework can run the task, preserve the evidence, and compare results, but the author still has to define what "good" means for the workflow: which sources count, which assumptions are allowed, which omissions matter, and what a useful report must contain.
 
-The reward does not have to stop at the final artifact, either. It can score the agent trajectory: whether the agent activated the intended skill, called the right tools, followed the expected sequence, handled uncertainty, and left evidence for each step. ATIF, the Agent Trajectory Interchange Format, matters here because it gives those steps a shared shape across agents instead of leaving every harness with its own private log format [6].
+The reward does not have to stop at the final artifact, either. It can score the agent trajectory: whether the agent activated the intended skill, called the right tools, followed the expected sequence, handled uncertainty, and left evidence for each step. ATIF, the Agent Trajectory Interchange Format, matters here because it gives those steps a shared shape across agents instead of leaving every harness with its own private log format [7].
 
 That is the point of using Runme and Harbor together. The moving parts of eval infrastructure should get boring, so authors can spend their judgment where it matters: the unit under test, the rubric, the reward, and the score. Applying best practices requires shared terms, and a shared harness gives teams a common vocabulary for tasks, trials, jobs, trajectories, and promotions instead of forcing every repo to invent its own glossary before it can measure anything.
 
@@ -87,7 +89,7 @@ Starting Harbor Viewer
   Server: http://127.0.0.1:8080
 ```
 
-This auto-opens the local eval history. In the showcase repo [5], promoted jobs are also [published publicly](https://world-cup-picks-report-evals.sourishkrout.workers.dev) [7], so a reviewer can inspect previous runs before trusting the current one. Today, `runme eval view` is a shortcut into Harbor View: it works, but it still assumes the reviewer understands the eval model. Over time, the Runme UX should give reviewers a clearer overview, so they can make review and promotion decisions faster.
+This auto-opens the local eval history. In the showcase repo [6], promoted jobs are also [published publicly](https://world-cup-picks-report-evals.sourishkrout.workers.dev) [8], so a reviewer can inspect previous runs before trusting the current one. Today, `runme eval view` is a shortcut into Harbor View: it works, but it still assumes the reviewer understands the eval model. Over time, the Runme UX should give reviewers a clearer overview, so they can make review and promotion decisions faster.
 
 ### Run the Regression
 
@@ -220,7 +222,7 @@ Harbor remains the underlying eval model and runner. It provides the task, datas
 
 The inner loop and outer loop are not mutually exclusive. During development, the fast local loop matters because authors need to create, run, inspect, and improve tasks where the workflow already lives. When the same tasks need to run in CI or across a larger fleet, `--env docker` lets those trials use a containerized environment too.
 
-Use Harbor when you are building or running benchmark-style agent evaluation infrastructure. Use `runme eval` when the thing you need to prove is already in a Git repo, already depends on local agent CLIs, and needs a lightweight path from task execution to dashboard inspection, baseline comparison, and Git-backed promotion evidence. The Runme docs describe this as filling the local workflow gap around Harbor's model [8].
+Use Harbor when you are building or running benchmark-style agent evaluation infrastructure. Use `runme eval` when the thing you need to prove is already in a Git repo, already depends on local agent CLIs, and needs a lightweight path from task execution to dashboard inspection, baseline comparison, and Git-backed promotion evidence. The Runme docs describe this as filling the local workflow gap around Harbor's model [9].
 
 ## From Demos to Regression History
 
@@ -238,7 +240,8 @@ That is what the new experimental `runme eval` command group in Runme v3.17 is f
 2. [Harbor Framework](https://harborframework.com/)
 3. [Show Us Your Agent Skills: How to Evaluate Agentic Workflows](https://hugobowne.github.io/agent-skills)
 4. [Terminal-Bench](https://www.tbench.ai/)
-5. [Showcase repo: `world-cup-picks-report` skill](https://github.com/sourishkrout/skills/tree/main/skills/world-cup-picks-report)
-6. [Agent Trajectory Format (ATIF)](https://www.harborframework.com/docs/agents/trajectory-format)
-7. [Published `world-cup-picks-report` eval history](https://world-cup-picks-report-evals.sourishkrout.workers.dev)
-8. [Runme task evals docs](https://docs.runme.dev/eval/)
+5. [Guillermo Rauch on testing](https://x.com/rauchg/status/807626710350839808)
+6. [Showcase repo: `world-cup-picks-report` skill](https://github.com/sourishkrout/skills/tree/main/skills/world-cup-picks-report)
+7. [Agent Trajectory Format (ATIF)](https://www.harborframework.com/docs/agents/trajectory-format)
+8. [Published `world-cup-picks-report` eval history](https://world-cup-picks-report-evals.sourishkrout.workers.dev)
+9. [Runme task evals docs](https://docs.runme.dev/eval/)
