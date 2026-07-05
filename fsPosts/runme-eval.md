@@ -242,7 +242,7 @@ That history matters even more across a heterogeneous user base. Once the task i
 
 The useful standard is not just the runner. It is the shared shape of the evidence: inputs, outputs, trajectories, artifacts, rewards, and scores. That gives teams a common place to improve rubrics and domain-specific evaluators, and it gives registries a way to show eval quality during discovery instead of asking users to trust a README.
 
-That is what the new experimental `runme eval` command group in Runme v3.17 is for. It gives teams a way to prove their AI workflows in the repos where those workflows already live.
+That is what the new experimental `runme eval` command group in Runme `v3.17` is for. It gives teams a way to prove their AI workflows in the repos where those workflows already live.
 
 ## Resources
 
