@@ -5,7 +5,7 @@ post_author_avatar: "sebastian-(tiedtke)-huckleberry.jpg"
 post_author_url: "https://twitter.com/sourishkrout"
 date: "2026-07-06"
 post_image: "runme-eval-cover.png"
-post_excerpt: "Runme v3.17 introduces an experimental runme eval command group for testing AI agent workflows in real repos, with repeatable evidence instead of screenshots and lucky runs."
+post_excerpt: "Your Claude demo looked great. Now prove it still works. Runme v3.17 brings local task evals into the repo, so AI workflows can be rerun, compared, and promoted with evidence."
 post_slug: "runme-eval"
 tags: ["developer tools", "ai", "automation", "notebook"]
 category: "runme"
@@ -21,7 +21,9 @@ runme_blog: true
 
 `F*** Your Skills (And Mine Too)` [1]. That was the line that got closest to the truth. Not "skills are useless." Not "agents are fake." Something more uncomfortable: if we are going to pass around folders of instructions, scripts, references, tool expectations, and workflow habits as reusable agent behavior, then both the agent's skill and the author's skill need to be inspected like code.
 
-Not as prompts. Not as magic. Code. Why don't we smoke, integration, and unit test them like code?
+## Not as prompts. Not as magic. Code.
+
+Why don't we smoke, integration, and unit test them like code?
 
 Because an agent skill can look useful and still fail like any agent workflow: wrong activation, wrong tool, stale context, missing sources, leaky boundaries, or a polished artifact that only passed because the agent got lucky once. That parenthetical matters. "Mine, too" turns the joke back on the people writing these workflows. A skill is not just markdown an agent consumes; it is a little software object made of assumptions, provenance, maintenance habits, and judgment. Install it, and you inherit the owner's operational folklore.
 
