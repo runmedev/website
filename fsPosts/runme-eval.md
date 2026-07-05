@@ -5,7 +5,7 @@ post_author_avatar: "sebastian-(tiedtke)-huckleberry.jpg"
 post_author_url: "https://twitter.com/sourishkrout"
 date: "2026-07-06"
 post_image: "runme-eval-cover.png"
-post_excerpt: "Your Claude demo looked great. Now prove it still works. Runme v3.17 brings local task evals into the repo, so AI workflows can be rerun, compared, and promoted with evidence."
+post_excerpt: "Bragging about your Claude is easy. Proving it still works is harder. Runme v3.17 brings local task evals into the repo, so AI workflows can be rerun, compared, and promoted with evidence."
 post_slug: "runme-eval"
 tags: ["developer tools", "ai", "automation", "notebook"]
 category: "runme"
@@ -65,6 +65,8 @@ As with software tests, the author chooses the boundary of what is under test. T
 ![Guillermo Rauch tweet: Write tests. Not too many. Mostly integration.](/img/blog/runme-eval-rauch-testing-tweet.png)
 
 One task eval is not enough to prove the whole workflow. It is enough to start building regression pressure. That is how we already use small, sharply focused smoke and integration tests: not as exhaustive proof, but as durable checks for the failure modes that matter. Guillermo Rauch's old testing advice still fits: write tests, not too many, mostly integration [5]. A repo-local eval suite does not need hundreds or thousands of tasks before it is useful. Start with the task that captures a real failure mode, then add cases where the workflow breaks, drifts, or needs a promotion decision.
+
+### A Small Workflow With Real Failure Modes
 
 The [`world-cup-picks-report` skill](https://github.com/sourishkrout/skills/tree/main/skills/world-cup-picks-report) [6] makes a good showcase for that reason. It depends on a live subject, the 2026 World Cup, plus evidence that the skill activated, searched the web, used good sources close to its claims, covered the target slate and lineup status, followed the workflow in order, respected uncertainty guardrails, and produced a final artifact with a strict format. It is small enough to inspect, but it exercises the same moving parts as larger agent workflows.
 
