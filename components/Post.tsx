@@ -6,6 +6,7 @@ import ExtensionCTA from "@/components/ExtensionCTA";
 import ImageWithCaption from "@/components/ImageWithCaption";
 import VideoWithCaption from "@/components/VideoWithCaption";
 import { InstallButton } from "@/components/InstallButton";
+import { DocsCta } from "@/components/Cta";
 import { MDXRemote } from "next-mdx-remote/rsc";
 import AuthorImage from "@/components/AuthorImage";
 import Link from "next/link";
@@ -39,6 +40,7 @@ const Post: React.FC<PostProps> = ({ post }) => {
               components={{
                 BeforeYouGo,
                 Command,
+                DocsCta,
                 ExtensionCTA,
                 ImageWithCaption,
                 InstallButton,
