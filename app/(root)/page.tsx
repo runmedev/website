@@ -301,18 +301,16 @@ const Hero = () => {
   return (
     <div className="flex flex-col space-y-3 text-center px-4 md:px-0">
       <a
-        href="https://console.visr.dev?utm_source=runme.dev&utm_medium=website&utm_campaign=hero_banner"
-        target="_blank"
-        rel="noopener noreferrer"
+        href="/blog/runme-eval"
         className="group mx-auto inline-flex max-w-full items-center justify-center"
       >
         <div className="flex flex-wrap items-center justify-center gap-2 rounded-full border border-yellow-400 bg-neutral-950/80 px-3 py-2 text-sm text-gray-200 shadow-lg shadow-yellow-400/30 hover:bg-neutral-900 md:px-4 md:text-base">
           <span className="rounded-full bg-yellow-400 px-2 py-0.5 text-xs font-semibold uppercase tracking-wide text-black ring-1 ring-yellow-300">
-            New
+            New post
           </span>
-          <span>Codex, Claude Code, or Cursor?</span>
+          <span>Deploying workflows into agents?</span>
           <span className="rounded-full bg-yellow-400 px-3 py-1 font-semibold text-black ring-1 ring-yellow-300 transition group-hover:bg-yellow-300">
-            Turn shell sessions into agent context →
+            Test them like code →
           </span>
         </div>
       </a>
