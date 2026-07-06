@@ -240,13 +240,13 @@ Use Harbor when you are building or running benchmark-style agent evaluation inf
 
 ## From Demos to Regression History
 
-The eval conversation is still aimed at agents people build. Most teams are shipping something else: behavior they deploy into agents they already use. Skills, repo instructions, tools, context, and workflow habits are the everyday surface area. They need a boring answer to a practical question: did this workflow get better, worse, or just different? And how much did the model, settings, harness, or environment move the score?
+The eval conversation is still aimed at agents people build. Most teams are shipping something else: behavior they deploy into agents they already use. Skills, repo instructions, tools, context, and workflow habits are the everyday surface area. They need a boring answer to a practical question: did this workflow get better, worse, or just different?
 
-That is the shape of `runme eval`: capture the task, run it where the workflow already lives, compare it against what used to work, and promote the evidence when the change is worth keeping. Models, effort settings, agent harnesses, and local versus containerized environments can all become part of the same history instead of a pile of screenshots.
+That is the shape of `runme eval`: capture the task, run it where the workflow already lives, compare it against what used to work, and promote the evidence when the change is worth keeping. Model choice, effort settings, harnesses, and environments become part of the same history instead of a pile of screenshots.
 
-The useful standard is not just the runner. It is the shared shape of the evidence: inputs, outputs, trajectories, artifacts, rewards, and scores. That gives teams a place to improve rubrics and domain-specific evaluators, and it gives registries a way to show eval quality during discovery instead of asking users to trust a README.
+The useful standard is not just the runner. It is the shared shape of the evidence: inputs, outputs, trajectories, artifacts, rewards, and scores. That gives teams a place to improve rubrics and domain-specific evaluators, and registries a way to show eval quality instead of asking users to trust a README.
 
-The `runme eval` command group in Runme `v3.17` is experimental, and this is exactly the part where feedback would help: the local workflow, the compare/promote loop, the Harbor handoff, the defaults, and the places where the UX still assumes too much eval vocabulary. If you try it on a real agent workflow, I want to know where it made the loop boring and where it still made you think about infrastructure.
+The `runme eval` command group in Runme `v3.17` is still early, and this is where feedback would help: the local workflow, the compare/promote loop, the Harbor handoff, the defaults, and the places where the UX still assumes too much eval vocabulary.
 
 And if you really want to know: yes, my World Cup prediction workflow did get better.
 
