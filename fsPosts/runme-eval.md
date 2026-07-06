@@ -238,7 +238,7 @@ That is a different job than building agent benchmark infrastructure or custom a
 
 Use Harbor when you are building or running benchmark-style agent evaluation infrastructure. Use `runme eval` when you are deploying behavior into agents people already use: the thing you need to prove is already in a Git repo, already depends on local agent CLIs, and needs a lightweight path from task execution to dashboard inspection, baseline comparison, and Git-backed promotion evidence. The Runme docs describe this as filling the local workflow gap around Harbor's model [11].
 
-## From Demos to Regression History
+## Test What You Deploy Into Agents
 
 The eval conversation is still aimed at agents people build. Most teams are shipping something else: behavior they deploy into agents they already use. Skills, repo instructions, tools, context, and workflow habits are the everyday surface area. They need a boring answer to a practical question: did this workflow get better, worse, or just different?
 
