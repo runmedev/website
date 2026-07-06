@@ -44,7 +44,7 @@ The reason this extends beyond skills is that "your Claude" is no longer just a 
 - the task trajectory the agent chooses
 - the final artifact it produces
 
-This post is not about evaluating bespoke agents built with LLM or agent SDKs, nor about security problems such as supply-chain attacks, malicious skills, or secret exfiltration. Those are separate problems. This is about the popular AI harnesses people already use in real repos, where the outcome depends on much more than the model call.
+This post is not about evaluating bespoke agents built with LLM or agent SDKs, nor about security problems such as supply-chain attacks, malicious skills, or secret exfiltration. Those are separate problems. This is about the popular AI harnesses people already use in real repos: deploying skills, instructions, tools, and workflow habits into agents such as Claude, Codex, Cursor, ChatGPT, or OpenCode, then proving that behavior still works.
 
 We depend on that layer like infrastructure, but still validate it like copy-paste prompts: screenshots, demos, lucky runs, and personal rituals. The Show Us Your Agent Skills segment on Hamel Husain's skill scepticism makes a similar point: public skills should be read like code, with provenance, maintenance, and constraints checked before anyone treats them as reusable infrastructure [3]. The same discipline applies to the full workflow: smoke tests, focused tests for the pieces, integration tests for tools and context, and regression history for trajectories that used to work.
 
@@ -86,7 +86,7 @@ The reward should not stop at the final artifact. Scoring only the output misses
 
 ![Harbor verifier logs showing reward scores and judge reasoning](/img/blog/runme-eval-verifier-rewards.png)
 
-That is the point of using Runme and Harbor together. The moving parts of eval infrastructure should get boring, so authors can spend their judgment where it matters: the unit under test, the rubric, the reward, and the score. Applying best practices requires shared terms, and a shared harness gives teams a common vocabulary for tasks, trials, jobs, trajectories, and promotions instead of forcing every repo to invent its own glossary before it can measure anything.
+That is the point of using Runme and Harbor together. The moving parts of eval infrastructure should get boring, so authors can spend their judgment where it matters: the unit under test, the rubric, the reward, and the score. That matters especially for people deploying reusable behavior into existing agents, not building new agent stacks from scratch. Applying best practices requires shared terms, and a shared harness gives teams a common vocabulary for tasks, trials, jobs, trajectories, and promotions instead of forcing every repo to invent its own glossary before it can measure anything.
 
 In other words: this is not testing whether the model can write plausible sports prose. It is testing whether the workflow still holds together across instructions, tools, context, trajectory, model choice, effort settings, and artifact.
 
@@ -234,11 +234,11 @@ The promoted record becomes part of the project history. The important shift is 
 
 ## Differences between Runme and Harbor
 
-Harbor remains the underlying eval model and runner. It provides the task, dataset, trial, job, and artifact concepts that make agent evaluation concrete. Runme does not replace that; it standardizes on the same model and adds the local workflow mechanics around it. In that sense, `runme eval` is a practical superset for repo-local work: it knows how to stage a working directory, run the agent where the workflow already lives, and keep Harbor-shaped inputs and outputs.
+Harbor remains the underlying eval model and runner. It provides the task, dataset, trial, job, and artifact concepts that make agent evaluation concrete. Runme does not replace that; it standardizes on the same model and adds the workflow mechanics around it for people who are deploying skills, instructions, tools, and repo habits into existing agents. In that sense, `runme eval` is a practical superset for repo-local work: it knows how to stage a working directory, run the agent where the workflow already lives, and keep Harbor-shaped inputs and outputs.
 
-The inner loop and outer loop are not mutually exclusive. During development, the fast local loop matters because authors need to create, run, inspect, and improve tasks against real repo state and the locally logged-in agent setup they already use. When the same tasks need to run in CI or across a larger fleet, the sandbox path stays open: `--env docker` lets those trials use a containerized environment too.
+That is a different job than building agent benchmark infrastructure or custom agent runtimes. The inner loop and outer loop are not mutually exclusive. During development, the fast local loop matters because authors need to create, run, inspect, and improve tasks against real repo state and the locally logged-in agent setup they already use. When the same tasks need to run in CI or across a larger fleet, the sandbox path stays open: `--env docker` lets those trials use a containerized environment too.
 
-Use Harbor when you are building or running benchmark-style agent evaluation infrastructure. Use `runme eval` when the thing you need to prove is already in a Git repo, already depends on local agent CLIs, and needs a lightweight path from task execution to dashboard inspection, baseline comparison, and Git-backed promotion evidence. The Runme docs describe this as filling the local workflow gap around Harbor's model [11].
+Use Harbor when you are building or running benchmark-style agent evaluation infrastructure. Use `runme eval` when you are deploying behavior into agents people already use: the thing you need to prove is already in a Git repo, already depends on local agent CLIs, and needs a lightweight path from task execution to dashboard inspection, baseline comparison, and Git-backed promotion evidence. The Runme docs describe this as filling the local workflow gap around Harbor's model [11].
 
 ## From Demos to Regression History
 
