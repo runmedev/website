@@ -27,7 +27,7 @@ Why don't we test them like code: smoke tests, integration tests, unit tests?
 
 Because an agent skill can look useful and still fail like any agent workflow: wrong activation, wrong tool, stale context, missing sources, leaky boundaries, or a polished artifact that only passed because the agent got lucky once.
 
-The "mine, too" part matters. It turns the joke back on the people writing these workflows. A skill is not just markdown an agent consumes; it is a little software object made of assumptions, provenance, maintenance habits, and judgment. Install it, and you inherit the owner's operational folklore.
+The "mine, too" part matters. It turns the joke back on the people writing these workflows. Before a skill proves anything to a registry, a teammate, or a user, it has to prove something to its author. A skill is not just markdown an agent consumes; it is a little software object made of assumptions, provenance, maintenance habits, and judgment. Install it, and you inherit the author's operational folklore.
 
 ![Runme eval CLI output showing one completed trial with perfect correctness](/img/blog/runme-eval-trial-run.png)
 
