@@ -4,7 +4,7 @@ post_author: "Sebastian Huckleberry"
 post_author_avatar: "sebastian-(tiedtke)-huckleberry.jpg"
 post_author_url: "https://twitter.com/sourishkrout"
 date: "2026-07-06"
-post_image: "runme-eval-cover.png"
+post_image: "runme-eval-cover-og.jpg"
 post_excerpt: "Bragging about your Claude is easy. Proving the behavior you deploy into agents keeps working is harder. Runme v3.17 brings local task evals into the repo, so AI workflows can be rerun, compared, and promoted with evidence."
 post_slug: "runme-eval"
 tags: ["developer tools", "ai", "automation", "notebook"]
