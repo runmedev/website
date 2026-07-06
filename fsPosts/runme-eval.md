@@ -80,9 +80,9 @@ In principle, this eval could target Openclaw directly. In this run, a bug in Ha
 
 ### Own the Dataset's Rubric
 
-The important part is the domain-specific rubric. The framework can run the task, preserve the evidence, and compare results, but the author still has to define what "good" means for the workflow: which sources count, which assumptions are allowed, which omissions matter, and what a useful report must contain. In this example, that judgment lives in a small [scoring rubric for the World Cup report task](https://github.com/sourishkrout/skills/tree/main/skills/world-cup-picks-report/evals/regression/end-to-end/tests/rewards) [10].
+The important part is the domain-specific rubric. The framework can run the task, preserve the evidence, and compare results, but the author still has to define what "good" means for the workflow: which sources count, which assumptions are allowed, which omissions matter, and what a useful report must contain. In this example, that judgment lives in a small [scoring rubric for the World Cup report task](https://github.com/sourishkrout/skills/tree/main/skills/world-cup-picks-report/evals/regression/end-to-end/tests/rewards) [7].
 
-The reward should not stop at the final artifact. Scoring only the output misses the work the eval is meant to measure. It should also score the agent trajectory: whether the agent activated the intended skill, called the right tools, followed the expected sequence, handled uncertainty, and left evidence for each step. ATIF, the Agent Trajectory Interchange Format, matters here because it gives those steps a shared shape across agents instead of leaving every harness with its own private log format [7].
+The reward should not stop at the final artifact. Scoring only the output misses the work the eval is meant to measure. It should also score the agent trajectory: whether the agent activated the intended skill, called the right tools, followed the expected sequence, handled uncertainty, and produced [scoring output that explains the reward](https://world-cup-picks-report-evals.sourishkrout.workers.dev/jobs/2026-06-30__11-40-20/tasks/regression/runme-codex/_/gpt-5.5/sourishkrout%2Fskills_world-cup-picks-report_end-to-end/trials/end-to-end__3Q9nawz?tab=test-output) [8]. ATIF, the Agent Trajectory Interchange Format, matters here because it gives those steps a shared shape across agents instead of leaving every harness with its own private log format [9].
 
 ![Harbor verifier logs showing reward scores and judge reasoning](/img/blog/runme-eval-verifier-rewards.png)
 
@@ -103,7 +103,7 @@ Starting Harbor Viewer
   Server: http://127.0.0.1:8080
 ```
 
-This auto-opens the local eval history. In the showcase repo [6], promoted jobs are also [published publicly](https://world-cup-picks-report-evals.sourishkrout.workers.dev) [8], so a reviewer can inspect previous runs before trusting the current one. Today, `runme eval view` is a shortcut into Harbor View: it works, but it still assumes the reviewer understands the eval model. Over time, the Runme UX should give reviewers a clearer overview, so they can make review and promotion decisions faster.
+This auto-opens the local eval history. In the showcase repo [6], promoted jobs are also [published publicly](https://world-cup-picks-report-evals.sourishkrout.workers.dev) [10], so a reviewer can inspect previous runs before trusting the current one. Today, `runme eval view` is a shortcut into Harbor View: it works, but it still assumes the reviewer understands the eval model. Over time, the Runme UX should give reviewers a clearer overview, so they can make review and promotion decisions faster.
 
 ### Run the Regression
 
@@ -238,7 +238,7 @@ Harbor remains the underlying eval model and runner. It provides the task, datas
 
 The inner loop and outer loop are not mutually exclusive. During development, the fast local loop matters because authors need to create, run, inspect, and improve tasks against real repo state and the locally logged-in agent setup they already use. When the same tasks need to run in CI or across a larger fleet, the sandbox path stays open: `--env docker` lets those trials use a containerized environment too.
 
-Use Harbor when you are building or running benchmark-style agent evaluation infrastructure. Use `runme eval` when the thing you need to prove is already in a Git repo, already depends on local agent CLIs, and needs a lightweight path from task execution to dashboard inspection, baseline comparison, and Git-backed promotion evidence. The Runme docs describe this as filling the local workflow gap around Harbor's model [9].
+Use Harbor when you are building or running benchmark-style agent evaluation infrastructure. Use `runme eval` when the thing you need to prove is already in a Git repo, already depends on local agent CLIs, and needs a lightweight path from task execution to dashboard inspection, baseline comparison, and Git-backed promotion evidence. The Runme docs describe this as filling the local workflow gap around Harbor's model [11].
 
 ## From Demos to Regression History
 
@@ -262,7 +262,8 @@ That is what the new experimental `runme eval` command group in Runme `v3.17` is
 4. [Terminal-Bench](https://www.tbench.ai/)
 5. [Guillermo Rauch on testing](https://x.com/rauchg/status/807626710350839808)
 6. [Showcase repo: `world-cup-picks-report` skill](https://github.com/sourishkrout/skills/tree/main/skills/world-cup-picks-report)
-7. [Agent Trajectory Format (ATIF)](https://www.harborframework.com/docs/agents/trajectory-format)
-8. [Published `world-cup-picks-report` eval history](https://world-cup-picks-report-evals.sourishkrout.workers.dev)
-9. [Runme task evals docs](https://docs.runme.dev/eval/)
-10. [`world-cup-picks-report` scoring rubric](https://github.com/sourishkrout/skills/tree/main/skills/world-cup-picks-report/evals/regression/end-to-end/tests/rewards)
+7. [`world-cup-picks-report` scoring rubric](https://github.com/sourishkrout/skills/tree/main/skills/world-cup-picks-report/evals/regression/end-to-end/tests/rewards)
+8. [Concrete `world-cup-picks-report` scoring output](https://world-cup-picks-report-evals.sourishkrout.workers.dev/jobs/2026-06-30__11-40-20/tasks/regression/runme-codex/_/gpt-5.5/sourishkrout%2Fskills_world-cup-picks-report_end-to-end/trials/end-to-end__3Q9nawz?tab=test-output)
+9. [Agent Trajectory Format (ATIF)](https://www.harborframework.com/docs/agents/trajectory-format)
+10. [Published `world-cup-picks-report` eval history](https://world-cup-picks-report-evals.sourishkrout.workers.dev)
+11. [Runme task evals docs](https://docs.runme.dev/eval/)
