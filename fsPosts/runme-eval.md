@@ -254,7 +254,7 @@ And if you really want to know: Yes, my World Cup picks with friends did improve
 
 ![World Cup picks leaderboard showing improved matchday points but a remaining gap to the leaders](/img/blog/runme-eval-world-cup-standings.png)
 
-Questions, rough edges, better examples: find me in [Runme's Discord](https://discord.gg/jFy92yxT). I would like to hear what happens when `runme eval` meets your own agent workflow.
+Questions, rough edges, better examples: find me in [Runme's Discord](https://discord.gg/jFy92yxT). I would like to hear what happens when `runme eval` meets your own agent workflow. And stay tuned for the Runme Eval Skill to put your Claude on task evaluation auto-pilot.
 
 <DocsCta compact label="Read the Eval docs" link="https://docs.runme.dev/eval/" />
 
