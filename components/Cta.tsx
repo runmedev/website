@@ -41,22 +41,48 @@ export function GithubCTAButton(): React.ReactElement {
 }
 
 interface CTAButtonProps {
+  link?: string;
   children: ReactNode;
 }
 
-export function CTAButton({ children }: CTAButtonProps): React.ReactElement {
+export function CTAButton({ link = "https://docs.runme.dev", children }: CTAButtonProps): React.ReactElement {
   return (
     <div className="w-full pb-8 mx-auto sm:max-w-min">
-      <Button link={"https://docs.runme.dev"}>{children}</Button>
+      <Button link={link}>{children}</Button>
     </div>
   );
 }
 
-export function DocsCta(): React.ReactElement {
+interface DocsCtaProps {
+  compact?: boolean;
+  label?: string;
+  link?: string;
+  title?: string;
+}
+
+export function DocsCta({
+  compact = false,
+  label = "Explore the docs",
+  link = "https://docs.runme.dev",
+  title,
+}: DocsCtaProps): React.ReactElement {
+  if (compact) {
+    return (
+      <div className="w-full px-4 py-6 text-center md:px-0">
+        {title && <div className="pb-4 text-xl font-semibold">{title}</div>}
+        <div className="w-full mx-auto sm:max-w-min">
+          <Button link={link}>{label}</Button>
+        </div>
+      </div>
+    );
+  }
+
+  const heading = title || "Get started, run a README.md";
+
   return (
     <div className="w-full px-4 text-center md:px-0">
-      <div className="pb-10 text-3xl font-semibold">Get started, run a README.md</div>
-      <CTAButton>Explore the docs</CTAButton>
+      <div className="pb-10 text-3xl font-semibold">{heading}</div>
+      <CTAButton link={link}>{label}</CTAButton>
       <div className="text-sm font-plex">
         <InstallStuff />
       </div>

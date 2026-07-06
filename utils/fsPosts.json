@@ -1,4 +1,5 @@
 {
+  "runme-eval": "runme-eval.md",
   "substitute-yaml-with-nouns-verbs": "substitute-yaml-with-nouns-verbs.md",
   "typed-env-vars": "typed-env-vars.md",
   "rollup-terminals": "rollup-terminals.md",
