@@ -105,7 +105,7 @@ Starting Harbor Viewer
 
 This auto-opens the local eval history. In the showcase repo [6], promoted jobs are also [published publicly](https://world-cup-picks-report-evals.sourishkrout.workers.dev) [10], so a reviewer can inspect previous runs before trusting the current one. Today, `runme eval view` is a shortcut into Harbor View: it works, but it still assumes the reviewer understands the eval model. Over time, the Runme UX should give reviewers a clearer overview, so they can make review and promotion decisions faster.
 
-### Run the Regression
+### Run the End-to-End Regression
 
 From the repo root, let's "force" a regression using `low` effort:
 
