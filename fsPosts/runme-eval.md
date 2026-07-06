@@ -82,6 +82,8 @@ The important part is the domain-specific rubric. The framework can run the task
 
 The reward should not stop at the final artifact. Scoring only the output misses the work the eval is meant to measure. It should also score the agent trajectory: whether the agent activated the intended skill, called the right tools, followed the expected sequence, handled uncertainty, and left evidence for each step. ATIF, the Agent Trajectory Interchange Format, matters here because it gives those steps a shared shape across agents instead of leaving every harness with its own private log format [7].
 
+![Harbor verifier logs showing reward scores and judge reasoning](/img/blog/runme-eval-verifier-rewards.png)
+
 That is the point of using Runme and Harbor together. The moving parts of eval infrastructure should get boring, so authors can spend their judgment where it matters: the unit under test, the rubric, the reward, and the score. Applying best practices requires shared terms, and a shared harness gives teams a common vocabulary for tasks, trials, jobs, trajectories, and promotions instead of forcing every repo to invent its own glossary before it can measure anything.
 
 In other words: this is not testing whether the model can write plausible sports prose. It is testing whether the workflow still holds together across instructions, tools, context, trajectory, model choice, effort settings, and artifact.
