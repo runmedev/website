@@ -23,9 +23,11 @@ runme_blog: true
 
 ## Not as prompts. Not as magic. Code.
 
-Why don't we smoke, integration, and unit test them like code?
+Why don't we test them like code: smoke tests, integration tests, unit tests?
 
-Because an agent skill can look useful and still fail like any agent workflow: wrong activation, wrong tool, stale context, missing sources, leaky boundaries, or a polished artifact that only passed because the agent got lucky once. That parenthetical matters. "Mine, too" turns the joke back on the people writing these workflows. A skill is not just markdown an agent consumes; it is a little software object made of assumptions, provenance, maintenance habits, and judgment. Install it, and you inherit the owner's operational folklore.
+Because an agent skill can look useful and still fail like any agent workflow: wrong activation, wrong tool, stale context, missing sources, leaky boundaries, or a polished artifact that only passed because the agent got lucky once.
+
+The "mine, too" part matters. It turns the joke back on the people writing these workflows. A skill is not just markdown an agent consumes; it is a little software object made of assumptions, provenance, maintenance habits, and judgment. Install it, and you inherit the owner's operational folklore.
 
 ![Runme eval CLI output showing one completed trial with perfect correctness](/img/blog/runme-eval-trial-run.png)
 
