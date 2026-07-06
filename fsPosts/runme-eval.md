@@ -78,9 +78,9 @@ In principle, this eval could target Openclaw directly. In this run, an ATIF tra
 
 ### Own the Dataset's Rubric
 
-The important part is the domain-specific rubric. The framework can run the task, preserve the evidence, and compare results, but the author still has to define what "good" means for the workflow: which sources count, which assumptions are allowed, which omissions matter, and what a useful report must contain. In this example, that judgment lives in a small [scoring rubric for the World Cup report task](https://github.com/sourishkrout/skills/blob/main/skills/world-cup-picks-report/evals/regression/end-to-end/tests/rewards/criteria.py) [10].
+The important part is the domain-specific rubric. The framework can run the task, preserve the evidence, and compare results, but the author still has to define what "good" means for the workflow: which sources count, which assumptions are allowed, which omissions matter, and what a useful report must contain. In this example, that judgment lives in a small [scoring rubric for the World Cup report task](https://github.com/sourishkrout/skills/tree/main/skills/world-cup-picks-report/evals/regression/end-to-end/tests/rewards) [10].
 
-The reward does not have to stop at the final artifact, either. It can score the agent trajectory: whether the agent activated the intended skill, called the right tools, followed the expected sequence, handled uncertainty, and left evidence for each step. ATIF, the Agent Trajectory Interchange Format, matters here because it gives those steps a shared shape across agents instead of leaving every harness with its own private log format [7].
+The reward should not stop at the final artifact. Scoring only the output misses the work the eval is meant to measure. It should also score the agent trajectory: whether the agent activated the intended skill, called the right tools, followed the expected sequence, handled uncertainty, and left evidence for each step. ATIF, the Agent Trajectory Interchange Format, matters here because it gives those steps a shared shape across agents instead of leaving every harness with its own private log format [7].
 
 That is the point of using Runme and Harbor together. The moving parts of eval infrastructure should get boring, so authors can spend their judgment where it matters: the unit under test, the rubric, the reward, and the score. Applying best practices requires shared terms, and a shared harness gives teams a common vocabulary for tasks, trials, jobs, trajectories, and promotions instead of forcing every repo to invent its own glossary before it can measure anything.
 
@@ -261,4 +261,4 @@ That is what the new experimental `runme eval` command group in Runme `v3.17` is
 7. [Agent Trajectory Format (ATIF)](https://www.harborframework.com/docs/agents/trajectory-format)
 8. [Published `world-cup-picks-report` eval history](https://world-cup-picks-report-evals.sourishkrout.workers.dev)
 9. [Runme task evals docs](https://docs.runme.dev/eval/)
-10. [`world-cup-picks-report` scoring rubric](https://github.com/sourishkrout/skills/blob/main/skills/world-cup-picks-report/evals/regression/end-to-end/tests/rewards/criteria.py)
+10. [`world-cup-picks-report` scoring rubric](https://github.com/sourishkrout/skills/tree/main/skills/world-cup-picks-report/evals/regression/end-to-end/tests/rewards)
