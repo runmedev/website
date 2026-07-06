@@ -48,8 +48,6 @@ This post is not about evaluating bespoke agents built with LLM or agent SDKs, n
 
 We depend on that layer like infrastructure, but still validate it like copy-paste prompts: screenshots, demos, lucky runs, and personal rituals. The Show Us Your Agent Skills segment on Hamel Husain's skill scepticism makes a similar point: public skills should be read like code, with provenance, maintenance, and constraints checked before anyone treats them as reusable infrastructure [3]. The same discipline applies to the full workflow: smoke tests, focused tests for the pieces, integration tests for tools and context, and regression history for trajectories that used to work.
 
-![Git commit log showing a recently promoted Runme eval result](/img/blog/runme-eval-promotion-commit.png)
-
 `runme eval` starts with the inner loop: record the task, run the workflow, keep the evidence, and make improvement history part of the repo where Claude is already configured and doing the work. That lowers the barrier for people getting started, while keeping the path open to the outer loop: running the same task evals in CI or scaled-out benchmark jobs. It builds on the same insight behind Harbor [2] and benchmarks like Terminal-Bench [4]: agent work can be captured as tasks, run through a harness, and judged by repeatable evidence instead of vibes.
 
 Let's make that concrete with a small workflow that has real-world failure modes.
@@ -242,15 +240,17 @@ Use Harbor when you are building or running benchmark-style agent evaluation inf
 
 ## From Demos to Regression History
 
-The agent ecosystem is moving fast, but teams still need a boring answer to a practical question: did this workflow get better, worse, or just different? And how do harnesses, models, effort settings, and environments change the answer?
+The eval conversation is still aimed at agents people build. Most teams are shipping something else: behavior they deploy into agents they already use. Skills, repo instructions, tools, context, and workflow habits are the everyday surface area. They need a boring answer to a practical question: did this workflow get better, worse, or just different? And how much did the model, settings, harness, or environment move the score?
 
-That question cannot be answered by a single impressive transcript. It needs the same discipline we already expect from other project infrastructure. Capture the task. Run it in a repeatable way. Compare the result against what used to work. Promote the evidence when the change is worth keeping.
+That is the shape of `runme eval`: capture the task, run it where the workflow already lives, compare it against what used to work, and promote the evidence when the change is worth keeping. Models, effort settings, agent harnesses, and local versus containerized environments can all become part of the same history instead of a pile of screenshots.
 
-That history matters even more across a heterogeneous user base. Once the task is captured, teams can compare more than one lucky run: model changes, reasoning effort, agent harnesses, local versus containerized environments, and other workflow choices all become part of the same evidence trail.
+The useful standard is not just the runner. It is the shared shape of the evidence: inputs, outputs, trajectories, artifacts, rewards, and scores. That gives teams a place to improve rubrics and domain-specific evaluators, and it gives registries a way to show eval quality during discovery instead of asking users to trust a README.
 
-The useful standard is not just the runner. It is the shared shape of the evidence: inputs, outputs, trajectories, artifacts, rewards, and scores. That gives teams a common place to improve rubrics and domain-specific evaluators, and it gives registries a way to show eval quality during discovery instead of asking users to trust a README.
+The `runme eval` command group in Runme `v3.17` is experimental, and this is exactly the part where feedback would help: the local workflow, the compare/promote loop, the Harbor handoff, the defaults, and the places where the UX still assumes too much eval vocabulary. If you try it on a real agent workflow, I want to know where it made the loop boring and where it still made you think about infrastructure.
 
-That is what the new experimental `runme eval` command group in Runme `v3.17` is for. It gives teams a way to prove their AI workflows in the repos where those workflows already live.
+And if you really want to know: yes, my World Cup prediction workflow did get better.
+
+![Git commit log showing a promoted World Cup eval result with a high reward score](/img/blog/runme-eval-promotion-commit.png)
 
 <DocsCta compact label="Read the Eval docs" link="https://docs.runme.dev/eval/" />
 
