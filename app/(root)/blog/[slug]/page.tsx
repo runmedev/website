@@ -48,8 +48,6 @@ export async function generateMetadata({ params }: PageParams): Promise<Metadata
           images: [
             {
               url: coverUrl,
-              width: 3611,
-              height: 1844,
             },
           ],
           locale: "en-US",
