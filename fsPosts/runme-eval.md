@@ -46,7 +46,7 @@ The reason this extends beyond skills is that "your Claude" is no longer just a 
 
 This post is not about evaluating bespoke agents built with LLM or agent SDKs, nor about security problems such as supply-chain attacks, malicious skills, or secret exfiltration. Those are separate problems. This is about the popular AI harnesses people already use in real repos: deploying skills, instructions, tools, and workflow habits into agents such as Claude, Codex, Cursor, ChatGPT, or OpenCode, then proving that behavior continues to work.
 
-We depend on that layer like infrastructure, but still validate it like copy-paste prompts: screenshots, demos, lucky runs, and personal rituals. The Show Us Your Agent Skills segment on Hamel Husain's skill scepticism makes a similar point: public skills should be read like code, with provenance, maintenance, and constraints checked before anyone treats them as reusable infrastructure [3]. The same discipline applies to the full workflow: smoke tests, focused tests for the pieces, integration tests for tools and context, and regression history for trajectories that used to work.
+We depend on that layer like infrastructure, but still validate it like copy-paste prompts: screenshots, demos, lucky runs, and personal rituals. The `Show Us Your Agent Skills` segment on Hamel Husain's skill scepticism makes a similar point: public skills should be read like code, with provenance, maintenance, and constraints checked before anyone treats them as reusable infrastructure [3]. The same discipline applies to the full workflow: smoke tests, focused tests for the pieces, integration tests for tools and context, and regression history for trajectories that used to work.
 
 `runme eval` starts with the inner loop: record the task, run the workflow, keep the evidence, and make improvement history part of the repo where Claude is already configured and doing the work. That lowers the barrier for people getting started, while keeping the path open to the outer loop: running the same task evals in CI or scaled-out benchmark jobs. It builds on the same insight behind Harbor [2] and benchmarks like Terminal-Bench 2.0 [4], SWE-Bench Verified, and others: agent work can be captured as tasks, run through a harness, and judged by repeatable evidence instead of vibes. That makes Harbor a useful bridge between serious benchmark infrastructure and repo-local workflow regression tests.
 
@@ -262,7 +262,7 @@ Questions, rough edges, better examples: find me in [Runme's Discord](https://di
 
 1. [Hamel Husain's `F*** Your Skills (And Mine Too)` via Hugo Bowne's X](https://x.com/hugobowne/status/2060197089355895240)
 2. [Harbor Framework](https://harborframework.com/)
-3. [Show Us Your Agent Skills: How to Evaluate Agentic Workflows](https://hugobowne.github.io/agent-skills)
+3. [`Show Us Your Agent Skills`: How to Evaluate Agentic Workflows](https://hugobowne.github.io/agent-skills)
 4. [Terminal-Bench](https://www.tbench.ai/)
 5. [Guillermo Rauch on testing](https://x.com/rauchg/status/807626710350839808)
 6. [Showcase repo: `world-cup-picks-report` skill](https://github.com/sourishkrout/skills/tree/main/skills/world-cup-picks-report)
