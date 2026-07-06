@@ -248,7 +248,7 @@ The useful standard is not just the runner. It is the shared shape of the eviden
 
 The `runme eval` command group in Runme `v3.17` is still early, and this is where feedback would help: the local workflow, the compare/promote loop, the Harbor handoff, the defaults, and the places where the UX still assumes too much eval vocabulary.
 
-And if you really want to know: Yes, my World Cup picks with friends did get better. But between botching my pre-tournament bonus picks and not building this skill until matchday 3, the late push was not enough to close the gap.
+And if you really want to know: Yes, my World Cup picks with friends did improve. But between botching my pre-tournament bonus picks and not building this skill until matchday 3, the late high-risk push was not enough to close the gap.
 
 ![World Cup picks leaderboard showing improved matchday points but a remaining gap to the leaders](/img/blog/runme-eval-world-cup-standings.png)
 
