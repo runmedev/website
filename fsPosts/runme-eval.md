@@ -137,6 +137,8 @@ Share results by running `harbor upload .runme/evals/jobs/2026-07-05__11-44-20`
 
 This is the applied unit of work: run Codex against the packaged task, collect the [artifact](https://world-cup-picks-report-evals.sourishkrout.workers.dev/jobs/2026-06-30__11-40-20/tasks/regression/runme-codex/_/gpt-5.5/sourishkrout%2Fskills_world-cup-picks-report_end-to-end/trials/end-to-end__3Q9nawz?tab=artifacts), and keep the trajectory evidence needed to judge whether the skill actually activated, called the expected tools, followed the workflow, used good sources, covered the target slate, respected guardrails, and produced the expected report without drifting into betting-tip prose.
 
+A local eval run can modify the working tree. That is intentional: if the task asks the agent to edit files, generate artifacts, or update state, the eval should see the same repo changes you would get by driving the agent harness yourself.
+
 ### Compare Against the Baseline
 
 In normal use, skip the model and effort knobs and let the selected agent behave as it would if you drove it directly. During iterative development, overrides like lower reasoning effort are still useful for probing weaker configurations, reproducing failures, or deliberately forcing a regression.
@@ -234,7 +236,7 @@ The promoted record becomes part of the project history. The important shift is 
 
 Harbor remains the underlying eval model and runner. It provides the task, dataset, trial, job, and artifact concepts that make agent evaluation concrete. Runme does not replace that; it standardizes on the same model and adds the workflow mechanics around it for people who are deploying skills, instructions, tools, and repo habits into existing agents. In that sense, `runme eval` is a practical superset for repo-local work: it knows how to stage a working directory, run the agent where the workflow already lives, and keep Harbor-shaped inputs and outputs.
 
-That is a different job than building agent benchmark infrastructure or custom agent runtimes. The inner loop and outer loop are not mutually exclusive. During development, the fast local loop matters because authors need to create, run, inspect, and improve tasks against real repo state and the locally logged-in agent setup they already use. When the same tasks need to run in CI or across a larger fleet, the sandbox path stays open: `--env docker` lets those trials use a containerized environment too.
+That is a different job than building agent benchmark infrastructure or custom agent runtimes. The inner loop and outer loop are not mutually exclusive. During development, the fast local loop matters because authors need to create, run, inspect, and improve tasks against real repo state, including the working-tree changes a locally logged-in agent would make. When the same tasks need to run in CI or across a larger fleet, the sandbox path stays open: `--env docker` lets those trials use a containerized environment too.
 
 Use Harbor when you are building or running benchmark-style agent evaluation infrastructure. Use `runme eval` when you are deploying behavior into agents people already use: the thing you need to prove is already in a Git repo, already depends on local agent CLIs, and needs a lightweight path from task execution to dashboard inspection, baseline comparison, and Git-backed promotion evidence. The Runme docs describe this as filling the local workflow gap around Harbor's model [11].
 
