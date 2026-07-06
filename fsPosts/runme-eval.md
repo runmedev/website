@@ -248,9 +248,11 @@ The useful standard is not just the runner. It is the shared shape of the eviden
 
 The `runme eval` command group in Runme `v3.17` is still early, and this is where feedback would help: the local workflow, the compare/promote loop, the Harbor handoff, the defaults, and the places where the UX still assumes too much eval vocabulary.
 
-And if you really want to know: yes, my World Cup prediction workflow did get better.
+And if you really want to know: Yes, my World Cup picks with friends did get better. But between botching my pre-tournament bonus picks and not building this skill until matchday 3, the late push was not enough to close the gap.
 
-![Git commit log showing a promoted World Cup eval result with a high reward score](/img/blog/runme-eval-promotion-commit.png)
+![World Cup picks leaderboard showing improved matchday points but a remaining gap to the leaders](/img/blog/runme-eval-world-cup-standings.png)
+
+Questions, rough edges, better examples: find me in [Runme's Discord](https://discord.gg/jFy92yxT). I would like to hear what happens when `runme eval` meets your own agent workflow.
 
 <DocsCta compact label="Read the Eval docs" link="https://docs.runme.dev/eval/" />
 
