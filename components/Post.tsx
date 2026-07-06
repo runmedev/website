@@ -1,6 +1,7 @@
 import "/styles/markdown.css";
 import Command from "@/components/Command";
 import BeforeYouGo from "@/components/BeforeYouGo";
+import BlogImageLightbox from "@/components/BlogImageLightbox";
 import ExtensionCTA from "@/components/ExtensionCTA";
 import ImageWithCaption from "@/components/ImageWithCaption";
 import VideoWithCaption from "@/components/VideoWithCaption";
@@ -32,17 +33,19 @@ const Post: React.FC<PostProps> = ({ post }) => {
         </div>
         <h1 className="pt-4 pb-12 mx-auto text-4xl font-semibold text-center">{post?.title}</h1>
         <div className="px-4 markdown-body md:px-0">
-          <MDXRemote
-            source={post.body || ""}
-            components={{
-              BeforeYouGo,
-              Command,
-              ExtensionCTA,
-              ImageWithCaption,
-              InstallButton,
-              VideoWithCaption,
-            }}
-          />
+          <BlogImageLightbox>
+            <MDXRemote
+              source={post.body || ""}
+              components={{
+                BeforeYouGo,
+                Command,
+                ExtensionCTA,
+                ImageWithCaption,
+                InstallButton,
+                VideoWithCaption,
+              }}
+            />
+          </BlogImageLightbox>
         </div>
       </div>
     </div>
