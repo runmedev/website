@@ -5,7 +5,7 @@ post_author_avatar: "sebastian-(tiedtke)-huckleberry.jpg"
 post_author_url: "https://twitter.com/sourishkrout"
 date: "2026-07-06"
 post_image: "runme-eval-cover.png"
-post_excerpt: "Bragging about your Claude is easy. Proving it still works is harder. Runme v3.17 brings local task evals into the repo, so AI workflows can be rerun, compared, and promoted with evidence."
+post_excerpt: "Bragging about your Claude is easy. Proving the behavior you deploy into agents keeps working is harder. Runme v3.17 brings local task evals into the repo, so AI workflows can be rerun, compared, and promoted with evidence."
 post_slug: "runme-eval"
 tags: ["developer tools", "ai", "automation", "notebook"]
 category: "runme"
@@ -31,7 +31,7 @@ The "mine, too" part matters. It turns the joke back on the people writing these
 
 ![Runme eval CLI output showing one completed trial with perfect correctness](/img/blog/runme-eval-trial-run.png)
 
-That is the problem `runme eval` (`v3.17`) is trying to make boring: replace repeated vibe checks with proof that the workflow still works after the folklore leaves home. Skills are just the tip of the iceberg. The same task eval pattern applies anywhere instructions, tools, context, memory, and final artifacts have to keep working together. `runme eval` brings that discipline into the local repo, where the workflow already lives, using Harbor's eval model underneath [2].
+That is the problem `runme eval` (`v3.17`) is trying to make boring: replace repeated vibe checks with proof that the workflow continues to work after the folklore leaves home. Skills are just the tip of the iceberg. The same task eval pattern applies anywhere instructions, tools, context, memory, and final artifacts have to keep working together. `runme eval` brings that discipline into the local repo, where the workflow already lives, using Harbor's eval model underneath [2].
 
 The reason this extends beyond skills is that "your Claude" is no longer just a monolithic model. Or your Codex. Or ChatGPT. Or Cursor. Or OpenCode. Once these tools become part of your workflow, the thing that matters is the adoption layer between the base model and the work itself:
 
@@ -44,7 +44,7 @@ The reason this extends beyond skills is that "your Claude" is no longer just a 
 - the task trajectory the agent chooses
 - the final artifact it produces
 
-This post is not about evaluating bespoke agents built with LLM or agent SDKs, nor about security problems such as supply-chain attacks, malicious skills, or secret exfiltration. Those are separate problems. This is about the popular AI harnesses people already use in real repos: deploying skills, instructions, tools, and workflow habits into agents such as Claude, Codex, Cursor, ChatGPT, or OpenCode, then proving that behavior still works.
+This post is not about evaluating bespoke agents built with LLM or agent SDKs, nor about security problems such as supply-chain attacks, malicious skills, or secret exfiltration. Those are separate problems. This is about the popular AI harnesses people already use in real repos: deploying skills, instructions, tools, and workflow habits into agents such as Claude, Codex, Cursor, ChatGPT, or OpenCode, then proving that behavior continues to work.
 
 We depend on that layer like infrastructure, but still validate it like copy-paste prompts: screenshots, demos, lucky runs, and personal rituals. The Show Us Your Agent Skills segment on Hamel Husain's skill scepticism makes a similar point: public skills should be read like code, with provenance, maintenance, and constraints checked before anyone treats them as reusable infrastructure [3]. The same discipline applies to the full workflow: smoke tests, focused tests for the pieces, integration tests for tools and context, and regression history for trajectories that used to work.
 
