@@ -46,7 +46,6 @@ export default function Footer(): React.ReactElement {
             <FooterEntry text="GitHub" href="https://github.com/stateful/runme" />
             <FooterEntry text="Community" href="/community" />
             <FooterEntry text="Email Updates" href="/list" />
-            <FooterEntry text="Cloud" href="/cloud" />
           </FooterRow>
           <FooterRow title="documentation">
             <FooterEntry text="Installation" href="https://docs.runme.dev/installation/" />
