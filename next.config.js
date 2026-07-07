@@ -117,11 +117,6 @@ module.exports = {
         destination: "/",
         permanent: true,
       },
-      {
-        source: "/enterprise",
-        destination: "https://stateful.com",
-        permanent: true,
-      },
     ];
   },
   experimental: {

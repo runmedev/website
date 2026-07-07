@@ -2,7 +2,6 @@ import Link from "next/link";
 import { MDXRemote } from "next-mdx-remote/rsc";
 
 import CareerPitch from "@/components/CareerPitch";
-import CareerDisclaimer from "@/components/CareerDisclaimer";
 
 import "/styles/markdown.css";
 
@@ -21,7 +20,7 @@ export default async function JobDetails({ job }: JobDetailsProps): Promise<Reac
       <div className="pb-4 font-semibold">
         <Link href="/jobs">Back to jobs</Link>
       </div>
-      <MDXRemote source={job.body} components={{ CareerPitch, CareerDisclaimer }} />
+      <MDXRemote source={job.body} components={{ CareerPitch }} />
 
       <div className="w-1/2 py-8 mx-auto">
         <Link href={`/jobs/apply/${job?.slug}`} style={{ textDecoration: "none" }}>

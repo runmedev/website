@@ -75,12 +75,7 @@ export default function Footer(): React.ReactElement {
       <div className="flex flex-col items-center pt-4 pb-6 text-sm text-neutral-400">
         <div>
           Runme was originally created by{" "}
-          <Link
-            href="https://stateful.com"
-            className="text-white hover:brightness-90 hover:underline"
-          >
-            Stateful
-          </Link>
+          <span className="text-white">Stateful</span>
           .
         </div>
         <div>Copyright (c) {new Date().getFullYear()} The Runme Authors. All rights reserved.</div>
