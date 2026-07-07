@@ -33,6 +33,8 @@ The "mine, too" part matters. It turns the joke back on the people writing these
 
 That is the problem `runme eval` (`v3.17`) is trying to make boring: replace repeated vibe checks with proof that the workflow continues to work after the folklore leaves home. Skills are just the tip of the iceberg. The same task eval pattern applies anywhere instructions, tools, context, memory, and final artifacts have to keep working together. `runme eval` brings that discipline into the local repo, where the workflow already lives, using Harbor's eval model underneath [2].
 
+> **From notebooks to trajectories:** Runme made Markdown workflows executable as local notebooks. `runme eval` brings the same discipline to agent work, where the evidence is the full task trajectory: instructions, tools, context, artifacts, and judgments.
+
 The reason this extends beyond skills is that "your Claude" is no longer just a monolithic model. Or your Codex. Or ChatGPT. Or Cursor. Or OpenCode. Once these tools become part of your workflow, the thing that matters is the adoption layer between the base model and the work itself:
 
 - agent harnesses
