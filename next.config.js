@@ -114,7 +114,7 @@ module.exports = {
       },
       {
         source: "/cloud",
-        destination: "https://stateful.com",
+        destination: "/",
         permanent: true,
       },
       {
