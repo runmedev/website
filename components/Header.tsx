@@ -69,7 +69,7 @@ export const Header: React.FC = () => {
           </div>
           <div className="text-2xl font-semibold text-white">RUNME</div>
         </Link>
-        <div className="pt-2 px-6 hidden sm:block">
+        <div className="ml-6 hidden sm:flex items-center">
           <GitHubStars compact text="runme" url="https://github.com/runmedev/runme" />
         </div>
       </NavbarBrand>

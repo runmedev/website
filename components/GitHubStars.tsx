@@ -46,8 +46,8 @@ const GitHubStars: React.FC<GitHubStarsProps> = ({ compact = false, url, text })
   return (
     <a
       href={url}
-      className={`inline-flex items-center rounded-md border border-neutral-300 bg-white font-semibold text-neutral-900 shadow-sm transition hover:bg-neutral-100 hover:!no-underline ${
-        compact ? "gap-1.5 px-2 py-1 text-xs" : "gap-2 px-3 py-1.5 text-sm"
+      className={`inline-flex items-center rounded-md border border-neutral-300 bg-white font-semibold leading-none text-neutral-900 shadow-sm transition hover:bg-neutral-100 hover:!no-underline ${
+        compact ? "h-8 gap-1.5 px-2 text-xs" : "gap-2 px-3 py-1.5 text-sm"
       }`}
       aria-label={`Star ${text} on GitHub`}
     >
