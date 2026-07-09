@@ -25,10 +25,10 @@ const GitHubStars: React.FC<GitHubStarsProps> = ({ compact = false, url, text })
           throw new Error("Failed to fetch Runme totals");
         }
 
-        return res.json() as Promise<{ data?: { stars?: number } }>;
+        return res.json() as Promise<{ data?: { starsPerRepo?: { runme?: number } } }>;
       })
       .then((resp) => {
-        const starCount = resp.data?.stars;
+        const starCount = resp.data?.starsPerRepo?.runme;
 
         if (typeof starCount === "number") {
           setStars(formatStars(starCount));
