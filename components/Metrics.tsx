@@ -74,7 +74,7 @@ const metricsMap: MetricsMap = {
 };
 
 async function getRunmeTotals(): Promise<RunmeTotalsResponse> {
-  const next = { revalidate: 5 * 60 }; // bust cache after 5min
+  const next = { revalidate: 30 * 60 }; // bust cache after 30min
   const res = await fetch("https://sourishkrout-runmetotals.web.val.run/", {
     next,
   });
