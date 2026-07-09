@@ -6,11 +6,12 @@ import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { useEffect, useState } from "react";
 
 interface GitHubStarsProps {
+  compact?: boolean;
   url: string;
   text: string;
 }
 
-const GitHubStars: React.FC<GitHubStarsProps> = ({ url, text }) => {
+const GitHubStars: React.FC<GitHubStarsProps> = ({ compact = false, url, text }) => {
   const [stars, setStars] = useState<string | null>(null);
 
   useEffect(() => {
@@ -45,14 +46,19 @@ const GitHubStars: React.FC<GitHubStarsProps> = ({ url, text }) => {
   return (
     <a
       href={url}
-      className="inline-flex items-center gap-2 rounded-md border border-neutral-300 bg-white px-3 py-1.5 text-sm font-semibold text-neutral-900 shadow-sm transition hover:bg-neutral-100 hover:!no-underline"
+      className={`inline-flex items-center rounded-md border border-neutral-300 bg-white font-semibold text-neutral-900 shadow-sm transition hover:bg-neutral-100 hover:!no-underline ${
+        compact ? "gap-1.5 px-2 py-1 text-xs" : "gap-2 px-3 py-1.5 text-sm"
+      }`}
       aria-label={`Star ${text} on GitHub`}
     >
-      <FontAwesomeIcon icon={faGithub} />
+      {!compact && <FontAwesomeIcon icon={faGithub} />}
       <span>Star</span>
       <FontAwesomeIcon icon={faStar} className="text-yellow-500" />
       {stars && (
-        <span className="border-l border-neutral-300 pl-2 tabular-nums" aria-label={`${stars} GitHub stars`}>
+        <span
+          className={`border-l border-neutral-300 tabular-nums ${compact ? "pl-1.5" : "pl-2"}`}
+          aria-label={`${stars} GitHub stars`}
+        >
           {stars}
         </span>
       )}
