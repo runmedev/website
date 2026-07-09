@@ -1,7 +1,7 @@
 "use client";
 
 import {
-  Link,
+  Link as NextUILink,
   Navbar,
   NavbarBrand,
   NavbarContent,
@@ -17,6 +17,7 @@ import {
 } from "@nextui-org/react";
 import React, { useState } from "react";
 import Image from "next/image";
+import NextLink from "next/link";
 import { usePathname } from "next/navigation";
 import GitHubStars from "@/components/GitHubStars";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
@@ -26,6 +27,28 @@ import type { MenuItem } from "@/types/components";
 interface ExpandedMenusState {
   [key: string]: boolean;
 }
+
+interface HeaderLinkProps {
+  children: React.ReactNode;
+  className?: string;
+  href: string;
+}
+
+const HeaderLink: React.FC<HeaderLinkProps> = ({ children, className, href }) => {
+  if (href.startsWith("/")) {
+    return (
+      <NextLink href={href} className={className}>
+        {children}
+      </NextLink>
+    );
+  }
+
+  return (
+    <NextUILink href={href} className={className}>
+      {children}
+    </NextUILink>
+  );
+};
 
 export const Header: React.FC = () => {
   const pathname = usePathname();
@@ -63,12 +86,12 @@ export const Header: React.FC = () => {
     <Navbar className="bg-purpledk" isMenuOpen={isMenuOpen} onMenuOpenChange={setIsMenuOpen}>
       {/* Logo and GitHub stars */}
       <NavbarBrand>
-        <Link href="/" className="flex items-center space-x-2 hover:brightness-90">
+        <HeaderLink href="/" className="flex items-center space-x-2 hover:brightness-90">
           <div className="w-[32px] h-[32px] relative">
             <Image fill src="/runme_logo.svg" alt="Runme" />
           </div>
           <div className="text-2xl font-semibold text-white">RUNME</div>
-        </Link>
+        </HeaderLink>
         <div className="ml-6 hidden sm:flex items-center">
           <GitHubStars compact text="runme" url="https://github.com/runmedev/runme" />
         </div>
@@ -91,28 +114,28 @@ export const Header: React.FC = () => {
               <DropdownMenu className="bg-purpledk text-white">
                 {item.subItems.map((subItem) => (
                   <DropdownItem key={subItem.text}>
-                    <Link
+                    <HeaderLink
                       href={subItem.href}
                       className={`block ${
                         pathname === subItem.href ? "font-semibold text-primary" : "text-white"
                       }`}
                     >
                       {subItem.text}
-                    </Link>
+                    </HeaderLink>
                   </DropdownItem>
                 ))}
               </DropdownMenu>
             </Dropdown>
           ) : (
             <NavbarItem key={item.text}>
-              <Link
+              <HeaderLink
                 href={item.href}
                 className={`font-medium ${
                   pathname === item.href ? "font-semibold text-primary" : "text-foreground"
                 }`}
               >
                 {item.text}
-              </Link>
+              </HeaderLink>
             </NavbarItem>
           )
         )}
@@ -133,14 +156,14 @@ export const Header: React.FC = () => {
           item.subItems ? (
             <NavbarMenuItem key={item.text}>
               <div className="flex justify-between items-center">
-                <Link
+                <HeaderLink
                   href={item.href}
                   className={`text-lg font-medium ${
                     pathname?.includes(item.href) ? "font-semibold text-primary" : "text-white"
                   }`}
                 >
                   {item.text}
-                </Link>
+                </HeaderLink>
                 <FontAwesomeIcon
                   icon={expandedMenus[item.text] ? faChevronDown : faChevronRight}
                   className="cursor-pointer"
@@ -150,7 +173,7 @@ export const Header: React.FC = () => {
               {expandedMenus[item.text] && (
                 <div className="ml-4 mt-2">
                   {item.subItems.map((subItem) => (
-                    <Link
+                    <HeaderLink
                       key={subItem.text}
                       href={subItem.href}
                       className={`block font-medium ${
@@ -158,28 +181,31 @@ export const Header: React.FC = () => {
                       }`}
                     >
                       {subItem.text}
-                    </Link>
+                    </HeaderLink>
                   ))}
                 </div>
               )}
             </NavbarMenuItem>
           ) : (
             <NavbarMenuItem key={item.text}>
-              <Link
+              <HeaderLink
                 href={item.href}
                 className={`text-lg font-medium ${
                   pathname === item.href ? "text-primary" : "text-white"
                 }`}
               >
                 {item.text}
-              </Link>
+              </HeaderLink>
             </NavbarMenuItem>
           )
         )}
         <NavbarMenuItem>
-          <Link href="https://docs.runme.dev" className="text-lg block font-semibold text-white">
+          <NextUILink
+            href="https://docs.runme.dev"
+            className="text-lg block font-semibold text-white"
+          >
             <FontAwesomeIcon icon={faPlay} /> &nbsp; Get Started
-          </Link>
+          </NextUILink>
         </NavbarMenuItem>
       </NavbarMenu>
 
