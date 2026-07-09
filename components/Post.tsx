@@ -4,6 +4,7 @@ import BeforeYouGo from "@/components/BeforeYouGo";
 import BlogImageLightbox from "@/components/BlogImageLightbox";
 import ExtensionCTA from "@/components/ExtensionCTA";
 import ImageWithCaption from "@/components/ImageWithCaption";
+import GitHubStars from "@/components/GitHubStars";
 import VideoWithCaption from "@/components/VideoWithCaption";
 import { InstallButton } from "@/components/InstallButton";
 import { DocsCta } from "@/components/Cta";
@@ -45,6 +46,7 @@ const Post: React.FC<PostProps> = ({ post }) => {
                 ImageWithCaption,
                 InstallButton,
                 VideoWithCaption,
+                GitHubStars,
               }}
             />
           </BlogImageLightbox>

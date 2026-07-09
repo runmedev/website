@@ -1,25 +1,25 @@
 "use client";
 import GitHubButton from "react-github-btn";
 
-interface StarsProps {
+interface GitHubStarsProps {
   url: string;
   text: string;
 }
 
-const Stars: React.FC<StarsProps> = ({ url, text }) => {
+const GitHubStars: React.FC<GitHubStarsProps> = ({ url, text }) => {
   return (
     <GitHubButton
       href={url}
-      data-text={text}
+      data-icon="octicon-star"
       title={text}
       // data-size="large"
       data-show-count="true"
-      aria-label="Star buttons/github-buttons on GitHub"
+      aria-label={`Star ${text} on GitHub`}
       data-color-scheme={"light"}
     >
-      Stars
+      Star
     </GitHubButton>
   );
 };
 
-export default Stars;
+export default GitHubStars;

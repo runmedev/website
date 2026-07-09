@@ -320,7 +320,7 @@ const Hero = () => {
         Codify your operational process as cloud-native, testable, interactive documentation.
       </h3>
       {/* <div className="py-4 flex flex-row space-x-2 items-center justify-center">
-        <Stars text="vscode-runme" url="https://github.com/stateful/vscode-runme" />
+        <GitHubStars text="vscode-runme" url="https://github.com/stateful/vscode-runme" />
       </div> */}
       <ActionButtons />
     </div>

@@ -18,7 +18,7 @@ import {
 import React, { useState } from "react";
 import Image from "next/image";
 import { usePathname } from "next/navigation";
-import Stars from "@/components/Stars";
+import GitHubStars from "@/components/GitHubStars";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faChevronDown, faChevronRight, faPlay } from "@fortawesome/free-solid-svg-icons";
 import type { MenuItem } from "@/types/components";
@@ -61,7 +61,7 @@ export const Header: React.FC = () => {
 
   return (
     <Navbar className="bg-purpledk" isMenuOpen={isMenuOpen} onMenuOpenChange={setIsMenuOpen}>
-      {/* Logo and Stars */}
+      {/* Logo and GitHub stars */}
       <NavbarBrand>
         <Link href="/" className="flex items-center space-x-2 hover:brightness-90">
           <div className="w-[32px] h-[32px] relative">
@@ -70,7 +70,7 @@ export const Header: React.FC = () => {
           <div className="text-2xl font-semibold text-white">RUNME</div>
         </Link>
         <div className="pt-2 px-6 hidden sm:block">
-          <Stars text="runme" url="https://github.com/stateful/runme" />
+          <GitHubStars text="runme" url="https://github.com/stateful/runme" />
         </div>
       </NavbarBrand>
 

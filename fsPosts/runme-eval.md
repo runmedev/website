@@ -54,7 +54,10 @@ We depend on that layer like infrastructure, but still validate it like copy-pas
 
 Let's make that concrete with a small workflow that has real-world failure modes.
 
-<DocsCta compact label="Read the Eval docs" link="https://docs.runme.dev/eval/" />
+<div className="w-full px-4 py-6 text-center md:px-0">
+  <div className="pb-5 text-xl font-semibold">Star Runme on GitHub</div>
+  <GitHubStars text="runmedev/runme" url="https://github.com/runmedev/runme" />
+</div>
 
 ## A Concrete Eval Loop
 
@@ -232,7 +235,10 @@ The `--artifacts` flag opts into promoting full eval artifacts such as logs and 
 
 The promoted record becomes part of the project history. The important shift is that improvement is no longer a screenshot or a memory of a lucky run. It is a task, a result, a comparison, and a Git-backed promotion trail.
 
-<DocsCta compact label="Read the Eval docs" link="https://docs.runme.dev/eval/" />
+<div className="w-full px-4 py-6 text-center md:px-0">
+  <div className="pb-5 text-xl font-semibold">Star Runme on GitHub</div>
+  <GitHubStars text="runmedev/runme" url="https://github.com/runmedev/runme" />
+</div>
 
 ## Differences between Runme and Harbor
 
