@@ -357,7 +357,7 @@ const OssSection = () => {
         </div>
         <Button
           as="a"
-          href="https://github.com/stateful/runme"
+          href="https://github.com/runmedev/runme"
           color="primary"
           className="tracking-widest font-medium"
           variant="solid"

@@ -43,7 +43,7 @@ export default function Footer(): React.ReactElement {
           </div>
 
           <FooterRow title="Runme">
-            <FooterEntry text="GitHub" href="https://github.com/stateful/runme" />
+            <FooterEntry text="GitHub" href="https://github.com/runmedev/runme" />
             <FooterEntry text="Community" href="/community" />
             <FooterEntry text="Email Updates" href="/list" />
           </FooterRow>

@@ -89,6 +89,6 @@ The project, called Owl Store, draws inspiration from the SSH Agent and the rela
 
 If you haven’t yet, check out Runme’s Dagger integration. After you’ve [installed Dagger](https://docs.dagger.io/install) using their setup instructions [here’s a simple example](https://github.com/stateful/vscode-runme/blob/main/dagger/README.md) of how to build Runme’s kernel binary and the VS Code integration.
 
-Please let us know your thoughts [on Discord](https://discord.gg/jFy92yxT) and [give us a star on GitHub](https://github.com/stateful/runme)! Thank you.
+Please let us know your thoughts [on Discord](https://discord.gg/jFy92yxT) and [give us a star on GitHub](https://github.com/runmedev/runme)! Thank you.
 
 <ExtensionCTA label="Install Runme" extension="runme" />

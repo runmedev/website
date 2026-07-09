@@ -92,7 +92,7 @@ The link is generated as "Secret Gist" which, as long as you keep the link priva
 
 ## That’s it 💪
 
-Congrats! Save, share, and collaborate with your team. Needless to say, it is also entirely possible to keep the Session Output files offline and local. Read about it [here](/blog/runme-v3-pipeline-logs-and-artifacts). While you're here, please give [Runme a ⭐️ Star](https://github.com/stateful/runme/stargazers) on GitHub.
+Congrats! Save, share, and collaborate with your team. Needless to say, it is also entirely possible to keep the Session Output files offline and local. Read about it [here](/blog/runme-v3-pipeline-logs-and-artifacts). While you're here, please give [Runme a ⭐️ Star](https://github.com/runmedev/runme/stargazers) on GitHub.
 
 If you desire tighter control to govern access and visibility for these useful DevOps workflows and artifacts features inside your teams, please check out [Stateful](https://stateful.com/), the platform built around Open Source Runme.
 

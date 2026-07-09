@@ -1,5 +1,6 @@
-"use client";
-import GitHubButton from "react-github-btn";
+import { faGithub } from "@fortawesome/free-brands-svg-icons";
+import { faStar } from "@fortawesome/free-solid-svg-icons";
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 
 interface GitHubStarsProps {
   url: string;
@@ -8,17 +9,15 @@ interface GitHubStarsProps {
 
 const GitHubStars: React.FC<GitHubStarsProps> = ({ url, text }) => {
   return (
-    <GitHubButton
+    <a
       href={url}
-      data-icon="octicon-star"
-      title={text}
-      // data-size="large"
-      data-show-count="true"
+      className="inline-flex items-center gap-2 rounded-md border border-neutral-300 bg-white px-3 py-1.5 text-sm font-semibold text-neutral-900 shadow-sm transition hover:bg-neutral-100 hover:!no-underline"
       aria-label={`Star ${text} on GitHub`}
-      data-color-scheme={"light"}
     >
-      Star
-    </GitHubButton>
+      <FontAwesomeIcon icon={faGithub} />
+      <span>Star</span>
+      <FontAwesomeIcon icon={faStar} className="text-yellow-500" />
+    </a>
   );
 };
 

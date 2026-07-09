@@ -59,7 +59,7 @@ const metricsMap: MetricsMap = {
     title: "GitHub Stars",
     color: "text-yellow-300",
     link: "Go to GitHub",
-    href: "https://github.com/stateful/runme",
+    href: "https://github.com/runmedev/runme",
     icon: <FontAwesomeIcon icon={faStar} size="xl" />,
   },
   discord: {

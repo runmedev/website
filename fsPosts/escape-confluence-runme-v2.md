@@ -73,7 +73,7 @@ Configuration languages aren’t inherently executable. This doesn’t mean that
 
 ## Language Runtimes Auto-Detection
 
-For more common interpreters, you shouldn’t have to specify an `interpreter` explicitly. Below is the auto-detection mapping used by Runme. Feel free to [file a GitHub issue](https://github.com/stateful/runme/issues/new) for any language runtime you feel is missing. Runme will use the first match in `$PATH` as specified in the order below unless the `interpreter` includes a full path to a binary.
+For more common interpreters, you shouldn’t have to specify an `interpreter` explicitly. Below is the auto-detection mapping used by Runme. Feel free to [file a GitHub issue](https://github.com/runmedev/runme/issues/new) for any language runtime you feel is missing. Runme will use the first match in `$PATH` as specified in the order below unless the `interpreter` includes a full path to a binary.
 
 <table className="text-left">
   <thead>
@@ -207,4 +207,4 @@ That's it.
 
 ## Join the Community
 
-As always, please join our [Discord server](https://discord.gg/jFy92yxT) or file a [ticket on GitHub](https://github.com/stateful/runme/issues/new) with any questions or ideas you might have. We’re excited about Runme v2.0 and can’t wait to unlock more of Runme’s roadmap. If you haven't already, please [try Runme Playground](https://app.runme.dev/)’s cell saving and sharing.
+As always, please join our [Discord server](https://discord.gg/jFy92yxT) or file a [ticket on GitHub](https://github.com/runmedev/runme/issues/new) with any questions or ideas you might have. We’re excited about Runme v2.0 and can’t wait to unlock more of Runme’s roadmap. If you haven't already, please [try Runme Playground](https://app.runme.dev/)’s cell saving and sharing.

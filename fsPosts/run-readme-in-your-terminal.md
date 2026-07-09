@@ -19,7 +19,7 @@ canonical_url: ""
 runme_blog: true
 ---
 
-> Please note: `rdme` has been renamed to `runme` available at [https://github.com/stateful/runme](https://github.com/stateful/runme).
+> Please note: `rdme` has been renamed to `runme` available at [https://github.com/runmedev/runme](https://github.com/runmedev/runme).
 
 Documentation has always been a crucial part of onboarding onto a non-trivial system. For this reason, developers of packaged software started including README files as part of their distribution documentation dating back to the mid-1970s.
 
@@ -27,7 +27,7 @@ Today, the readme is still around but has morphed into a markdown-based `README.
 
 ![retro.png](/img/blog/run-readme-in-your-terminal-a1.jpg)
 
-> Swordfish90’s [Apple2 retro terminal](https://github.com/Swordfish90/cool-retro-term) viewing [runme’s README.md](https://github.com/stateful/runme#runme)
+> Swordfish90’s [Apple2 retro terminal](https://github.com/Swordfish90/cool-retro-term) viewing [runme’s README.md](https://github.com/runmedev/runme#runme)
 
 ## Lowering entry barriers for developers
 
@@ -71,7 +71,7 @@ The parsing is still far from perfect, but with best-effort pattern-matching of 
 
 ![`runme run git-commit`](/img/blog/run-readme-in-your-terminal-a6.jpg)
 
-Using a simple `runme run <name>` you can run command blocks (check out the tab completion too) without much fuzz (as illustrated above making a sample commit to trigger the git-pre-commit hook). For a simple CLI tool, we have been pleasantly surprised at how natural the experience feels for interacting with tasks (if you like the terminal). You can find some [additional examples inside of runme’s repo](https://github.com/stateful/runme/blob/main/examples/README.md).
+Using a simple `runme run <name>` you can run command blocks (check out the tab completion too) without much fuzz (as illustrated above making a sample commit to trigger the git-pre-commit hook). For a simple CLI tool, we have been pleasantly surprised at how natural the experience feels for interacting with tasks (if you like the terminal). You can find some [additional examples inside of runme’s repo](https://github.com/runmedev/runme/blob/main/examples/README.md).
 
 Maybe in the future we will employ automation to execute the README’s commands continuously and detect outdated docs, but for now let's catch those issues by running them regularly with `runme`!
 
@@ -87,7 +87,7 @@ You can use `scoop` to install a version of `runme` on Windows. However, please 
 
 <Command instructions="scoop bucket add stateful https://github.com/stateful/scoop-bucket.git && scoop install stateful/runme" />
 
-For all other platforms, please check out the install section in [runme’s README.md](https://github.com/stateful/runme#installation).
+For all other platforms, please check out the install section in [runme’s README.md](https://github.com/runmedev/runme#installation).
 
 ## Much more runme could do
 
@@ -104,7 +104,7 @@ Here’s a list of possible improvements:
 - deterministic order of commands, without building Makefile inside of READMEs
 - what else?
 
-Check out [runme’s GitHub issues](https://github.com/stateful/runme/issues) to get a better sense of what projects are on the agenda.
+Check out [runme’s GitHub issues](https://github.com/runmedev/runme/issues) to get a better sense of what projects are on the agenda.
 
 ## Let us know how it goes
 

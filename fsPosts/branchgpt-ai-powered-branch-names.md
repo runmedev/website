@@ -119,7 +119,7 @@ $ scoop install stateful/runme; runme branchGPT
 $ brew install runme && runme branchGPT # on macOS (homebrew)
 ```
 
-> Full install [instructions here](https://github.com/stateful/runme/releases/latest). Note that `runme branch` and `runme branchGPT` are the same.
+> Full install [instructions here](https://github.com/runmedev/runme/releases/latest). Note that `runme branch` and `runme branchGPT` are the same.
 
 # Closing Thoughts
 
