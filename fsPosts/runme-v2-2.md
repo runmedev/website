@@ -69,6 +69,6 @@ The original markdown file used to load the Runme notebook will be left intact a
 
 ## **Join the Community**
 
-As always, please consider joining our **[Discord server](https://discord.gg/jFy92yxT)** or file a **[ticket on GitHub](https://github.com/stateful/runme/issues/new)** with any questions or ideas you might have. We’re excited to get Runme v3.0 out the door. If you haven't already, please give Runme a spin using the [Getting Started guide](https://docs.runme.dev/getting-started/).
+As always, please consider joining our **[Discord server](https://discord.gg/jFy92yxT)** or file a **[ticket on GitHub](https://github.com/runmedev/runme/issues/new)** with any questions or ideas you might have. We’re excited to get Runme v3.0 out the door. If you haven't already, please give Runme a spin using the [Getting Started guide](https://docs.runme.dev/getting-started/).
 
 Thank you!

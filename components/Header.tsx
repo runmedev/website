@@ -51,7 +51,7 @@ export const Header: React.FC = () => {
       text: "Community",
       href: "/community",
       subItems: [
-        { text: "GitHub", href: "https://github.com/stateful/runme" },
+        { text: "GitHub", href: "https://github.com/runmedev/runme" },
         { text: "Discord", href: "https://discord.gg/jFy92yxT" },
         { text: "Email Updates", href: "/list" },
       ],
@@ -70,7 +70,7 @@ export const Header: React.FC = () => {
           <div className="text-2xl font-semibold text-white">RUNME</div>
         </Link>
         <div className="pt-2 px-6 hidden sm:block">
-          <GitHubStars text="runme" url="https://github.com/stateful/runme" />
+          <GitHubStars text="runme" url="https://github.com/runmedev/runme" />
         </div>
       </NavbarBrand>
 

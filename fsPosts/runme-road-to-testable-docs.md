@@ -92,10 +92,10 @@ Using Runme ourselves as well as witnessing users, we generally want to invest i
   <div className="flex justify-center pt-2">or search `runme` inside VS Code</div>
 </div>
 
-You will be able to track the progress of shipping intermediate releases against Runme’s v1.0 scope in our [GitHub Projects boards](https://github.com/stateful/runme/projects). In our rough estimates we are aiming to launch v1.0 in February/March of 2023.
+You will be able to track the progress of shipping intermediate releases against Runme’s v1.0 scope in our [GitHub Projects boards](https://github.com/runmedev/runme/projects). In our rough estimates we are aiming to launch v1.0 in February/March of 2023.
 
 ## Let Us Know What You Think
 
-Anything you disagree with, provoked thoughts, or are longing for? Feel free to [find us on Discord](https://discord.gg/stateful), comment on existing tickets, or [create a new one](https://github.com/stateful/runme/issues/new)! Also, If you haven’t yet, now is a good time to give Runme a spin. You’ll be surprised how quickly it will replace your old markdown editor and associated habits.
+Anything you disagree with, provoked thoughts, or are longing for? Feel free to [find us on Discord](https://discord.gg/stateful), comment on existing tickets, or [create a new one](https://github.com/runmedev/runme/issues/new)! Also, If you haven’t yet, now is a good time to give Runme a spin. You’ll be surprised how quickly it will replace your old markdown editor and associated habits.
 
 Stay tuned! Thank you.

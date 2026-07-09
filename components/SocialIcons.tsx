@@ -23,7 +23,7 @@ const SocialIcons: React.FC = () => {
       <SocialLink href="https://discord.gg/jFy92yxT">
         <FontAwesomeIcon icon={faDiscord} size="lg" />
       </SocialLink>
-      <SocialLink href="https://github.com/stateful/runme">
+      <SocialLink href="https://github.com/runmedev/runme">
         <FontAwesomeIcon icon={faGithub} size="lg" />
       </SocialLink>
       <SocialLink href="https://twitter.com/runmedev">

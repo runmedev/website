@@ -317,7 +317,7 @@ It's not unusual to have GraphQL queries return queries. I suppose what I’m de
 
 ## What's Next
 
-Let us know what you think! The Owl Store is super early. It needs usage and more work to grow into its big promises. Get involved! The owl's code is [here](https://github.com/stateful/runme/tree/main/internal/owl). Let's say the code is a bit chaotic. I'm more of a creative who likes solving painful problems than a 10x Golang engineer. Pull Requests are welcome, but more than anything, please try it out!
+Let us know what you think! The Owl Store is super early. It needs usage and more work to grow into its big promises. Get involved! The owl's code is [here](https://github.com/runmedev/runme/tree/main/internal/owl). Let's say the code is a bit chaotic. I'm more of a creative who likes solving painful problems than a 10x Golang engineer. Pull Requests are welcome, but more than anything, please try it out!
 
 Here are open questions that are on our minds:
 

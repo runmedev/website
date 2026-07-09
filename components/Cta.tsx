@@ -30,7 +30,7 @@ export function WorksCTAButton(): React.ReactElement {
 export function GithubCTAButton(): React.ReactElement {
   return (
     <Link
-      href={"https://github.com/stateful/runme"}
+      href={"https://github.com/runmedev/runme"}
       className="w-full sm:max-w-min hover:!no-underline"
     >
       <div className="px-6 py-3 font-medium rounded-sm bg-purpleish-700 hover:bg-purpleish-500 whitespace-nowrap hover:brightness-90">

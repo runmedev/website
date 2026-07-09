@@ -54,7 +54,7 @@ Like with CI/CD pipelines, we know how powerful logs and build artifacts are. Th
 
 > Outputs file [`rollout-01HP7QRAVY5W9N5NGR25V9FZ2W.md`](http://rollout-01hp7qravy5w9n5ngr25v9fz2w.md/) in the same directory as `rollout.md`.
 
-Every cell output includes when it ran, time elapsed, and exit codes. More contextual metadata, e.g., hostname, user name, etc, could be saved to the Session Outputs file. Runme will also capture non-text [mime types](https://en.wikipedia.org/wiki/Media_type) like images (base64 encoded) outside of textual output produced by terminals. Feel free to [let us know](https://github.com/stateful/runme/issues/new) if you have feedback.
+Every cell output includes when it ran, time elapsed, and exit codes. More contextual metadata, e.g., hostname, user name, etc, could be saved to the Session Outputs file. Runme will also capture non-text [mime types](https://en.wikipedia.org/wiki/Media_type) like images (base64 encoded) outside of textual output produced by terminals. Feel free to [let us know](https://github.com/runmedev/runme/issues/new) if you have feedback.
 
 ![Cell with input and session output](/img/blog/runme-v3-pipeline-logs-and-artifacts-a5.jpg)
 

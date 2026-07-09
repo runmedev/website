@@ -169,6 +169,6 @@ We are currently heads-down working through the final touches of the Notebook Te
 
 <ExtensionCTA label="Install Runme" extension="runme" />
 
-Now go try it out and help us prioritize! We’d love to hear what you think. If you run into any problems, please don’t hesitate to report them [as a GitHub issue](https://github.com/stateful/runme) or talk to us [on Discord](https://discord.gg/stateful).
+Now go try it out and help us prioritize! We’d love to hear what you think. If you run into any problems, please don’t hesitate to report them [as a GitHub issue](https://github.com/runmedev/runme) or talk to us [on Discord](https://discord.gg/stateful).
 
 Happy ReadmeOps-ing 🤩!

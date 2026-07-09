@@ -88,7 +88,7 @@ const featureMap: FeatureMap = {
       "Built on the VS Code platform, open source and 100% markdown compatible. Also runs in Codespaces, Gitpod, VSCodium, and in the browser using coder/code-server.",
     img: "/graphics/terminal.gif",
     cta: "Runme on Github",
-    url: "https://github.com/stateful/runme",
+    url: "https://github.com/runmedev/runme",
     imgClasses: "px-6",
   },
 };
