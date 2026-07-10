@@ -133,7 +133,7 @@ export default async function BlogSlug({ params }: PageParams) {
             </div>
           </div>
 
-          <div className="grid min-w-0 items-center gap-8 md:grid-cols-[minmax(0,1fr)_360px] md:gap-10">
+          <div className="grid min-w-0 items-center gap-8 md:grid-cols-[minmax(0,1fr)_420px] md:gap-6">
             <div className="flex min-w-0 flex-col gap-6">
               <div className="flex flex-row items-center space-x-3">
                 <div>
@@ -160,12 +160,12 @@ export default async function BlogSlug({ params }: PageParams) {
             </div>
 
             {post.cover?.url && (
-              <div className="min-w-0 overflow-hidden rounded-md border border-white/10 bg-white/5 shadow-2xl">
+              <div className="relative min-w-0 overflow-visible md:-mr-8">
                 <img
                   src={post.cover.url}
                   alt=""
                   aria-hidden="true"
-                  className="h-auto w-full object-contain opacity-90 [mask-image:linear-gradient(90deg,transparent,black_10%,black_90%,transparent)] [-webkit-mask-image:linear-gradient(90deg,transparent,black_10%,black_90%,transparent)]"
+                  className="h-auto w-full object-contain object-right opacity-80 [mask-image:linear-gradient(90deg,transparent_0%,black_18%,black_68%,transparent_100%)] [-webkit-mask-image:linear-gradient(90deg,transparent_0%,black_18%,black_68%,transparent_100%)]"
                 />
               </div>
             )}
