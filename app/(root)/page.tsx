@@ -308,7 +308,7 @@ const Hero = () => {
           <span className="rounded-full bg-yellow-400 px-2 py-0.5 text-xs font-semibold uppercase tracking-wide text-black ring-1 ring-yellow-300">
             New post
           </span>
-          <span>Task evals for the other 99% of agent users →</span>
+          <span>Sure, Your Claude Is Doing Amazing Things. Prove It. →</span>
         </div>
       </a>
       <h1 className="font-plexSans text-3xl sm:text-4xl md:text-[56px] text-center md:leading-tight tracking-wider">
