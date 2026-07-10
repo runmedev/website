@@ -104,65 +104,70 @@ export default async function BlogSlug({ params }: PageParams) {
 
   return (
     <article className="overflow-hidden bg-[#f8f7fb]">
-      <header className="relative isolate overflow-hidden border-b border-neutral-200/70 bg-[#f8f7fb] text-black">
+      <header className="relative isolate overflow-hidden bg-purpledk text-white">
         {post.cover?.url && (
           <img
             src={post.cover.url}
             alt=""
             aria-hidden="true"
-            className="absolute inset-y-0 right-0 -z-20 hidden h-full w-[42vw] object-cover object-center opacity-50 [mask-image:linear-gradient(90deg,transparent_0%,transparent_20%,black_48%,black_88%,transparent_100%)] [-webkit-mask-image:linear-gradient(90deg,transparent_0%,transparent_20%,black_48%,black_88%,transparent_100%)] md:block"
+            className="absolute inset-0 -z-20 h-full w-full scale-110 object-cover opacity-25 blur-2xl"
           />
         )}
-        <div className="absolute inset-0 -z-10 bg-gradient-to-r from-[#f8f7fb] from-[44%] via-[#f8f7fb]/90 via-[62%] to-[#f8f7fb]/20" />
-        <div className="mx-auto flex max-w-screen-md min-w-0 flex-col gap-8 px-4 py-12 md:px-0 md:py-20">
-          <div className="flex flex-col gap-4 text-sm font-medium text-neutral-500 md:flex-row md:items-center md:justify-between">
-            <Link href="/blog" className="hover:text-black hover:underline">
+        <div className="absolute inset-0 -z-10 bg-purpledk/80" />
+        <div className="mx-auto flex max-w-screen-lg min-w-0 flex-col gap-10 px-4 py-10 md:px-0 md:py-14">
+          <div className="flex flex-col gap-4 text-sm font-medium text-neutral-200 md:flex-row md:items-center md:justify-between">
+            <Link href="/blog" className="text-purpleish-200 hover:text-white hover:underline">
               {"< Back to blog"}
             </Link>
             <div className="flex flex-col gap-3 md:flex-row md:items-center md:gap-6">
               <time dateTime={post.date}>{publishedDate}</time>
               {taxonomy && (
-                <div className="flex items-start gap-2 md:items-center">
-                  <FontAwesomeIcon icon={faTag} className="mt-1 text-neutral-400 md:mt-0" />
+                <div className="flex items-start gap-2 text-neutral-200 md:items-center">
+                  <FontAwesomeIcon icon={faTag} className="mt-1 text-purpleish-200 md:mt-0" />
                   <span>{taxonomy}</span>
                 </div>
               )}
-              <div className="text-neutral-500">
+              <div className="text-neutral-200">
                 <SocialIcons />
               </div>
             </div>
           </div>
 
-          <div className="flex min-w-0 flex-col gap-6">
-            <div className="flex flex-row items-center space-x-3">
-              <div>
-                <AuthorImage post={post} />
+          <div className="grid min-w-0 items-stretch gap-8 md:grid-cols-[minmax(0,1fr)_360px] md:gap-10">
+            <div className="flex min-w-0 flex-col gap-6">
+              <div className="flex flex-row items-center space-x-3">
+                <div>
+                  <AuthorImage post={post} />
+                </div>
+                <div className="font-medium text-neutral-100 hover:underline">
+                  {post.author && (
+                    <Link href={post.author.url || "/blog"}>
+                      <div>{post.author.name}</div>
+                    </Link>
+                  )}
+                </div>
               </div>
-              <div className="font-medium text-neutral-900 hover:underline">
-                {post.author && (
-                  <Link href={post.author.url || "/blog"}>
-                    <div>{post.author.name}</div>
-                  </Link>
+              <div className="min-w-0 max-w-full md:max-w-3xl">
+                <h1 className="max-w-full break-words text-3xl font-semibold leading-tight md:text-5xl">
+                  {post.title}
+                </h1>
+                {post.preview && (
+                  <p className="mt-5 max-w-full break-words text-base leading-7 text-neutral-200 md:max-w-2xl md:text-lg md:leading-8">
+                    {post.preview}
+                  </p>
                 )}
               </div>
             </div>
-            <div className="min-w-0 max-w-full">
-              <h1 className="max-w-full break-words text-3xl font-semibold leading-tight md:text-5xl">
-                {post.title}
-              </h1>
-              {post.preview && (
-                <p className="mt-5 max-w-full break-words text-base leading-7 text-neutral-600 md:max-w-2xl md:text-lg md:leading-8">
-                  {post.preview}
-                </p>
-              )}
-            </div>
+
             {post.cover?.url && (
-              <img
-                src={post.cover.url}
-                alt=""
-                aria-hidden="true"
-                className="mt-2 h-56 w-full object-cover opacity-50 [mask-image:linear-gradient(90deg,transparent_0%,black_22%,black_78%,transparent_100%)] [-webkit-mask-image:linear-gradient(90deg,transparent_0%,black_22%,black_78%,transparent_100%)] md:hidden"
-              />
+              <div className="w-full min-w-0 max-w-full overflow-hidden rounded-md shadow-2xl [mask-image:linear-gradient(90deg,transparent_0%,transparent_8%,black_34%,black_100%)] [-webkit-mask-image:linear-gradient(90deg,transparent_0%,transparent_8%,black_34%,black_100%)] md:h-full md:w-[146%] md:max-w-none">
+                <img
+                  src={post.cover.url}
+                  alt=""
+                  aria-hidden="true"
+                  className="block h-auto w-full max-w-full object-cover opacity-90 md:h-full"
+                />
+              </div>
             )}
           </div>
         </div>
