@@ -19,8 +19,6 @@ canonical_url: ""
 runme_blog: true
 ---
 
-Tired of copying secrets into GitHub/Gitlab every other day? Chasing down correct values for newly introduced ENV vars after git pull? Today, we are making these problems go away. Don't believe me? Read on.
-
 Introducing the 🦉 Owl Store, a concrete implementation of a Type System for Environment Variables that specifies, resolves, and verifies your environment's correctness.
 
 ## Let's Start With A Demo

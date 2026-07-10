@@ -19,8 +19,6 @@ canonical_url: ""
 runme_blog: true
 ---
 
-At Runme, we've been hard at work to enhance your experience and bring you some thrilling new features to upgrade your documentation automation process. We're excited to share these updates with you.
-
 ## **What's New at Runme?**
 
 ### 1. Record Every Change in Your Cloud Infrastructure:
