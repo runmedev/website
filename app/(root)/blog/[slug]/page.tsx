@@ -160,7 +160,7 @@ export default async function BlogSlug({ params }: PageParams) {
             </div>
 
             {post.cover?.url && (
-              <div className="w-full min-w-0 max-w-full overflow-hidden rounded-md shadow-2xl [mask-image:linear-gradient(90deg,transparent_0%,transparent_8%,black_34%,black_100%)] [-webkit-mask-image:linear-gradient(90deg,transparent_0%,transparent_8%,black_34%,black_100%)] md:h-full md:w-[146%] md:max-w-none">
+              <div className="w-full min-w-0 max-w-full overflow-hidden rounded-md shadow-2xl [mask-image:linear-gradient(90deg,transparent_0%,rgba(0,0,0,0.12)_12%,rgba(0,0,0,0.42)_34%,rgba(0,0,0,0.82)_58%,black_78%)] [-webkit-mask-image:linear-gradient(90deg,transparent_0%,rgba(0,0,0,0.12)_12%,rgba(0,0,0,0.42)_34%,rgba(0,0,0,0.82)_58%,black_78%)] md:h-full md:w-[146%] md:max-w-none">
                 <img
                   src={post.cover.url}
                   alt=""
