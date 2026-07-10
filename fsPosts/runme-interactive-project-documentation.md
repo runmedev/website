@@ -19,8 +19,6 @@ canonical_url: "https://webdriver.io/blog/2023/02/28/interactive-and-tested-docu
 runme_blog: true
 ---
 
-> The Stateful team has collaborated with the [WebdriverIO](https://webdriver.io/) project to help improve their documentation by making the documentation examples more interactive and accessible using Runme.
-
 The WebdriverIO framework is a versatile tool for browser and mobile test automation that offers a lot of features for you to play around with. The goal of their [project documentation](https://webdriver.io) is to clearly communicate it's features and how they can be applied to your project. A central contributor to this are code examples, like a picture that can be worth a thousand words.
 
 It's no surprise that embedded code examples in open source project documentation has become increasingly common. Many are even interactive and allow users to fiddle around with the code in real time, e.g. the [new React Docs](https://beta.reactjs.org/learn/adding-interactivity), or provide "playgrounds" with live examples, like on [svelte.dev](https://svelte.dev/examples/hello-world).

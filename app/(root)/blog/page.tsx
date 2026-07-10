@@ -5,7 +5,7 @@ import PostImage from "@/components/PostImage";
 import SocialIcons from "@/components/SocialIcons";
 import { format } from "date-fns";
 import { fetchFsPosts } from "utils/fetchFsPosts";
-import { frontToPreview, stripDuplicateExcerptFromBody } from "utils/postUtils";
+import { frontToPreview } from "utils/postUtils";
 import matter from "gray-matter";
 import type { Post as BlogPost, PostFrontmatter } from "@/types/blog";
 
@@ -15,7 +15,7 @@ async function getPosts(): Promise<BlogPost[]> {
     .map(([slug, markdown]) => {
       const { content, data: frontmatter } = matter(markdown);
       const post = frontToPreview(frontmatter as PostFrontmatter);
-      post.body = stripDuplicateExcerptFromBody(content, post.preview);
+      post.body = content;
       return post;
     })
     .sort((a, b) => new Date(b.date).getTime() - new Date(a.date).getTime());
