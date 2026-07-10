@@ -10,7 +10,7 @@ import { faTag } from "@fortawesome/free-solid-svg-icons";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import Post from "@/components/Post";
 import fsPostsMapping from "@/utils/fsPosts.json";
-import { frontToPreview } from "@/utils/postUtils";
+import { frontToPreview, stripDuplicateExcerptFromBody } from "@/utils/postUtils";
 import matter from "gray-matter";
 import type { Post as BlogPost, PostFrontmatter } from "@/types/blog";
 import { readFile } from "fs/promises";
@@ -37,7 +37,7 @@ const getPost = cache(async (slug: string): Promise<BlogPost | undefined> => {
   });
   const { content, data: frontmatter } = matter(markdown);
   const post = frontToPreview(frontmatter as PostFrontmatter);
-  post.body = content;
+  post.body = stripDuplicateExcerptFromBody(content, post.preview);
 
   return { ...post, slug };
 });
