@@ -68,6 +68,7 @@ export const Header: React.FC = () => {
         { text: "Getting Started", href: "https://docs.runme.dev/getting-started/" },
         { text: "Configuration", href: "https://docs.runme.dev/configuration" },
         { text: "Usage", href: "https://docs.runme.dev/usage" },
+        { text: "Eval", href: "https://docs.runme.dev/eval/" },
       ],
     },
     {
