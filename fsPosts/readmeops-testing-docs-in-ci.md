@@ -56,10 +56,9 @@ Let’s take a look at a demo. A “thank you” goes out to our friends at Buoy
 
 ## The End-to-End Demo
 
-<div className="container mx-auto max-w-7xxl sm:px-8 lg:px-16 md:mb-8">
-  <div className="flex justify-center pt-8">
-    [![](https://badgen.net/badge/Open%20with/Runme/5B3ADF?icon=https://runme.dev/img/logo.svg)](https://www.runme.dev/api/runme?repository=https%3A%2F%2Fgithub.com%2Fstateful%2Flinkerd-website.git&fileToOpen=tests/runme/README.md)
-  </div>
+<div className="w-full px-4 py-6 text-center md:px-0">
+  <div className="pb-5 text-xl font-semibold">Star Runme on GitHub</div>
+  <GitHubStars text="runmedev/runme" url="https://github.com/runmedev/runme" />
 </div>
 
 While you could watch the GitHub Action running in real-time, we can’t guarantee that the GitHub Action is running at all times, so we created a video. The time-lapse video (eventual consistency in Kubernetes takes time) illustrates side-by-side what’s going on when testing Linkerd’s Getting Started guide and Kubernetes cluster state. This exact setup will be executed inside a CI/CD job.

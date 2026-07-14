@@ -95,4 +95,7 @@ The best and most effective runbooks are those that are constantly evolving with
 
 In this article, we've unraveled the mystery of runbooks, from their basic definition to their practical applications in various scenarios. Runbooks are the backbone of efficient operations and incident response, ensuring that your systems run smoothly and securely. Now, it's time to take action.
 
-To experience the power of interactive notebooks firsthand, [try your own interactive notebook](https://platform.stateful.com/). Your operations will never be the same again. Don't miss out on the opportunity to optimize your workflow and enhance your team's efficiency with Runme.
+<div className="w-full px-4 py-6 text-center md:px-0">
+  <div className="pb-5 text-xl font-semibold">Star Runme on GitHub</div>
+  <GitHubStars text="runmedev/runme" url="https://github.com/runmedev/runme" />
+</div>

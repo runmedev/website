@@ -86,7 +86,10 @@ If you are asking yourself why we would choose to write a separate Session Outpu
 
 While we’re considering adding transparent opening of Session Outputs files in the future, it will almost inevitably require reformatting the source file as part of de-/serialization. However, if and when this becomes a priority on Runme’s roadmap, it will most likely be an optional feature. If you have thoughts or ideas about this, [please get in touch](https://discord.gg/jFy92yxT).
 
-Outside of capturing outputs, we are also working on adding emitting OpenTelemetry traces to standard-compliant collectors into Runme. This will allow Runme users to put output artifacts into the context of time and location, harnessing broadly available OpenTelemetry tooling. Curious how your team could benefit from Runme? [Click here](https://stateful.com/) to learn more.
+<div className="w-full px-4 py-6 text-center md:px-0">
+  <div className="pb-5 text-xl font-semibold">Star Runme on GitHub</div>
+  <GitHubStars text="runmedev/runme" url="https://github.com/runmedev/runme" />
+</div>
 
 <ExtensionCTA label="Install Runme" extension="runme" />
 

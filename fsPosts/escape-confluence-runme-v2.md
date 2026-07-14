@@ -207,4 +207,7 @@ That's it.
 
 ## Join the Community
 
-As always, please join our [Discord server](https://discord.gg/jFy92yxT) or file a [ticket on GitHub](https://github.com/runmedev/runme/issues/new) with any questions or ideas you might have. We’re excited about Runme v2.0 and can’t wait to unlock more of Runme’s roadmap. If you haven't already, please [try Runme Playground](https://app.runme.dev/)’s cell saving and sharing.
+<div className="w-full px-4 py-6 text-center md:px-0">
+  <div className="pb-5 text-xl font-semibold">Star Runme on GitHub</div>
+  <GitHubStars text="runmedev/runme" url="https://github.com/runmedev/runme" />
+</div>
