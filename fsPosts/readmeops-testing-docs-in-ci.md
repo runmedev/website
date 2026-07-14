@@ -21,7 +21,7 @@ runme_blog: true
 
 > 💡 In case you missed our humorous launch video for Runme v1.0 - check it out [here](https://youtu.be/LkRXtmnPBM0)
 
-Today, we are happy to announce that our open-source Runme project is reaching version 1.0. As part of this milestone, we’ve upgraded Runme’s kernel architecture, notebook, and CLI (now simply clients), enabling Runme’s human-centric UX to be even more interoperable. Moreover, you can now test your Markdown docs in CI/CD. As announced in [Runme's v1.0 roadmap](https://stateful.com/blog/runme-road-to-testable-docs) manifesto in December, this is super exciting. Starting today, every developer will be able to treat docs with the same level of care currently only afforded to source code: **Integration Testing Docs On Every Commit**.
+Today, we are happy to announce that our open-source Runme project is reaching version 1.0. As part of this milestone, we’ve upgraded Runme’s kernel architecture, notebook, and CLI (now simply clients), enabling Runme’s human-centric UX to be even more interoperable. Moreover, you can now test your Markdown docs in CI/CD. As announced in [Runme's v1.0 roadmap](https://runme.dev/blog/runme-road-to-testable-docs) manifesto in December, this is super exciting. Starting today, every developer will be able to treat docs with the same level of care currently only afforded to source code: **Integration Testing Docs On Every Commit**.
 
 # Integration Testing Docs On Every Commit
 
@@ -56,10 +56,9 @@ Let’s take a look at a demo. A “thank you” goes out to our friends at Buoy
 
 ## The End-to-End Demo
 
-<div className="container mx-auto max-w-7xxl sm:px-8 lg:px-16 md:mb-8">
-  <div className="flex justify-center pt-8">
-    [![](https://badgen.net/badge/Open%20with/Runme/5B3ADF?icon=https://runme.dev/img/logo.svg)](https://www.runme.dev/api/runme?repository=https%3A%2F%2Fgithub.com%2Fstateful%2Flinkerd-website.git&fileToOpen=tests/runme/README.md)
-  </div>
+<div className="w-full px-4 py-6 text-center md:px-0">
+  <div className="pb-5 text-xl font-semibold">Star Runme on GitHub</div>
+  <GitHubStars text="runmedev/runme" url="https://github.com/runmedev/runme" />
 </div>
 
 While you could watch the GitHub Action running in real-time, we can’t guarantee that the GitHub Action is running at all times, so we created a video. The time-lapse video (eventual consistency in Kubernetes takes time) illustrates side-by-side what’s going on when testing Linkerd’s Getting Started guide and Kubernetes cluster state. This exact setup will be executed inside a CI/CD job.
@@ -163,7 +162,7 @@ That said, Runme’s support of PowerShell on Windows (or other platforms) is st
 
 # Get Involved In ReadmeOps
 
-We‘ve been delighted to introduce you to ReadmeOps and Runme v1.0’s CI/CD capabilities. While the Runme team’s been laser-focused on unlocking Runme’s architectural shift, we did not stop short of improving Runme’s notebook, terminal, and on-ramping UX. If you haven’t already, check out [`runme tui`](https://docs.runme.dev/install#runme-cli) or the [handy Runme badges](https://stateful.com/blog/runme-blog-launcher), which will let you bootstrap into a Runme notebook straight from any web page, including Markdowns on GitHub.
+We‘ve been delighted to introduce you to ReadmeOps and Runme v1.0’s CI/CD capabilities. While the Runme team’s been laser-focused on unlocking Runme’s architectural shift, we did not stop short of improving Runme’s notebook, terminal, and on-ramping UX. If you haven’t already, check out [`runme tui`](https://docs.runme.dev/install#runme-cli) or the [handy Runme badges](https://runme.dev/blog/runme-blog-launcher), which will let you bootstrap into a Runme notebook straight from any web page, including Markdowns on GitHub.
 
 We are currently heads-down working through the final touches of the Notebook Terminal output experience (experimentally available for non-interactive and background tasks) directly inside your READMEs. Beyond that, our roadmap is full of UX improvements, big and small, to continue streamlining the daily workflows of developers.
 

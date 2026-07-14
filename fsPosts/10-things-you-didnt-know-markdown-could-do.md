@@ -67,7 +67,10 @@ Markdown terminal don't just display out. They are fully interactive, meaning yo
 
 Are you tired of seeing cryptic error messages that make it difficult to troubleshoot your code? Get better error messages using Runme.dev assist command, where you can display customized error messages that provide developers with clear, concise information on what went wrong, where it occurred, and how to fix it. The error can be posted to a Slack or Discord channel, and you can even ask ChatGPT for answers.
 
-_Disclaimer:_ `Ask AI` as an integral feature is coming soon, subscribe to [email updates](https://stateful.com/newsletter)
+<div className="w-full px-4 py-6 text-center md:px-0">
+  <div className="pb-5 text-xl font-semibold">Star Runme on GitHub</div>
+  <GitHubStars text="runmedev/runme" url="https://github.com/runmedev/runme" />
+</div>
 
 <video autoPlay loop muted playsInline controls>
   <source src="/img/blog/10-things-you-didnt-know-markdown-could-do-a6.jpg" type="video/mp4" />

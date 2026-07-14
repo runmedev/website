@@ -21,7 +21,7 @@ runme_blog: true
 
 > 💡 Skip ahead and learn about Runme's features? The project website's got the cliff notes: [https://runme.dev/](https://runme.dev/)
 
-In our ongoing efforts to make documentation more reliable and less susceptible to bit-rot, [we released](https://stateful.com/blog/run-readme-in-your-terminal) the `runme` CLI (renamed from `rdme`) back in August. The CLI lets you effortlessly execute shell blocks inside your `README.md` docs from the terminal. We’ve been pleasantly surprised how well it was received. Thank you all for the comments and feedback!
+In our ongoing efforts to make documentation more reliable and less susceptible to bit-rot, [we released](https://runme.dev/blog/run-readme-in-your-terminal) the `runme` CLI (renamed from `rdme`) back in August. The CLI lets you effortlessly execute shell blocks inside your `README.md` docs from the terminal. We’ve been pleasantly surprised how well it was received. Thank you all for the comments and feedback!
 
 ![Zero-changes required to turn your README.md into a runnable notebook](/img/blog/run-your-readme-in-vs-code-a1.jpg)
 
