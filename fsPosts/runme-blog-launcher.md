@@ -23,7 +23,10 @@ As a developer, you may often find yourself writing and reading technical blog p
 
 ## With our latest release, you can do just that!
 
-Let’s take for example the blog post “[How to Process Large Files with Node.js](https://stateful.com/blog/process-large-files-nodejs-streams)” which is one of our most popular blog posts.
+<div className="w-full px-4 py-6 text-center md:px-0">
+  <div className="pb-5 text-xl font-semibold">Star Runme on GitHub</div>
+  <GitHubStars text="runmedev/runme" url="https://github.com/runmedev/runme" />
+</div>
 
 If you click the link [“Launch the demo project locally”](vscode://stateful.runme?command=setup&repository=git@github.com:stateful/blog-examples.git&fileToOpen=node-streams/README.md) as shown below, you will be able to run the commands inside VS Code.
 

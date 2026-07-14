@@ -79,7 +79,7 @@ That's it! We're done. Super simple. Instead of calling Makefiles targets or NPM
 
 No more outdated developer docs. Unlock reliable onboarding bliss 🌈 for your repos!
 
-If this is too simple of a showcase for your needs, hop on over to this [end-to-end demo](https://stateful.com/blog/readmeops-testing-docs-in-ci#The%20End-to-End%20Demo) of a non-trivial CI/CD pipeline testing docs involving a Kubernetes cluster, a service mesh, and a small distributed application.
+If this is too simple of a showcase for your needs, hop on over to this [end-to-end demo](https://runme.dev/blog/readmeops-testing-docs-in-ci#The%20End-to-End%20Demo) of a non-trivial CI/CD pipeline testing docs involving a Kubernetes cluster, a service mesh, and a small distributed application.
 
 ## Before you go...
 
