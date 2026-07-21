@@ -19,21 +19,19 @@ canonical_url: ""
 runme_blog: true
 ---
 
-You generated a skill. Good. That is the easy part.
+Your agent generated a skill. Good. That was the easy part.
 
-LLMs are not generating bad skills because they are careless, or because they misunderstand what a skill is supposed to be. They are doing exactly what they were trained to do: infer the most likely behavior from the context in front of them. Given one repo, one task, and one successful outcome, they will often produce a skill that recreates that outcome beautifully.
+The skill can look right. It may even work beautifully for the repo and task that produced it, under the same assumptions. It may have captured the moment, not the method.
 
-That is also the problem.
+The model was neither careless nor confused. It did exactly what it was trained to do: infer the most likely behavior from the context in front of it. Give it one repo, one task, and one successful outcome, and it cannot reliably tell which details should generalize and which are specific to that instance.
 
-A generated skill can look correct while being too specific to the moment that produced it. It may work once, in one repo, under one set of assumptions.
+It may reproduce the outcome without capturing the broader capability you thought you captured.
 
 ## When Agents Generate Context Blind
 
 What makes it sting is that the eval has the same problem: it can certify the very overfit it was supposed to catch. If the same model generated both the skill and the test, the eval is not yet an impartial judge. That is like asking a team to referee its own game.
 
 A good eval should push against the skill: test what it is likely to fake, skip, or overfit. The skill should push back by revealing weak rubrics, missing edge cases, and shortcuts the judge accidentally rewards. That tension is the loop. Each side makes the other sharper.
-
-Let's make that concrete.
 
 ## The Setup
 
