@@ -29,9 +29,9 @@ It may reproduce the outcome without capturing the broader capability you though
 
 ## When Agents Generate Context Blind
 
-What makes it sting is that the eval has the same problem: it can certify the very overfit it was supposed to catch. If the same model generated both the skill and the test, the eval is not yet an impartial judge. That is like asking a team to referee its own game.
+What makes it sting is that generated evals have the same problem: they can certify the very overfit they were supposed to catch. If the same model generated both the skill and the test, the eval is not yet an impartial judge. That is like asking a sports team to referee its own game.
 
-A good eval should push against the skill: test what it is likely to fake, skip, or overfit. The skill should push back by revealing weak rubrics, missing edge cases, and shortcuts the judge accidentally rewards. That tension is the loop. Each side makes the other sharper.
+Think of the skill as the unit under test and the eval as its test suite. The eval should expose where the skill fakes, skips, or overfits. In turn, surprising passes should reveal weak assertions, missing edge cases, and shortcuts the eval accidentally rewards. That tension is the loop. Each side makes the other sharper.
 
 ## Put the Skill Under Pressure
 
