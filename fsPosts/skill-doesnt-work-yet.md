@@ -5,7 +5,7 @@ post_author_avatar: "sebastian-(tiedtke)-huckleberry.jpg"
 post_author_url: "https://twitter.com/sourishkrout"
 date: "2026-07-21"
 post_image: "skill-doesnt-work-yet-cover.png"
-post_excerpt: "A generated skill can look right while overfitting the moment that produced it. The fix is a tighter eval loop where the skill and the judge make each other sharper."
+post_excerpt: "A generated skill captures a moment; an eval loop turns it into a method. The catch: generation feels like the finish line, so the loop never gets built. Here's how to pressure-test it."
 post_slug: "skill-doesnt-work-yet"
 tags: ["developer tools", "ai", "automation", "skills"]
 category: "runme"
