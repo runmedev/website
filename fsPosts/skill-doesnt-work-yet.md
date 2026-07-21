@@ -33,7 +33,7 @@ What makes it sting is that the eval has the same problem: it can certify the ve
 
 A good eval should push against the skill: test what it is likely to fake, skip, or overfit. The skill should push back by revealing weak rubrics, missing edge cases, and shortcuts the judge accidentally rewards. That tension is the loop. Each side makes the other sharper.
 
-## The Setup
+## Put the Skill Under Pressure
 
 Say we generated a dependency-updater skill.
 
