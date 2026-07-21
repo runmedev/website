@@ -21,7 +21,7 @@ runme_blog: true
 
 Your agent generated a skill. Good. That was the easy part.
 
-The skill can look right. It may even work beautifully for the repo and task that produced it, under the same assumptions. It may have captured the moment, not the method.
+The skill can look right. It may even work beautifully for the repo and task that produced it, under the same conditions. It may have captured the moment, not the method.
 
 The model was neither careless nor confused. It did exactly what it was trained to do: infer the most likely behavior from the context in front of it. Give it one repo, one task, and one successful outcome, and it cannot reliably tell which details should generalize and which are specific to that instance.
 
