@@ -1,7 +1,6 @@
 import type { Metadata } from 'next';
 import AuthorImage from "@/components/AuthorImage";
 import SocialIcons from "@/components/SocialIcons";
-import { format } from "date-fns";
 import Link from "next/link";
 import { notFound } from "next/navigation";
 import path from "path";
@@ -10,6 +9,7 @@ import { faTag } from "@fortawesome/free-solid-svg-icons";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import Post from "@/components/Post";
 import fsPostsMapping from "@/utils/fsPosts.json";
+import { formatPostDate } from "@/utils/postDate";
 import { frontToPreview } from "@/utils/postUtils";
 import matter from "gray-matter";
 import type { Post as BlogPost, PostFrontmatter } from "@/types/blog";
@@ -99,7 +99,7 @@ export default async function BlogSlug({ params }: PageParams) {
     notFound();
   }
 
-  const publishedDate = format(new Date(post.date), "MMMM d, yyyy");
+  const publishedDate = formatPostDate(post.date);
   const taxonomy = [post.category, ...(post.tags ?? [])].filter(Boolean).join(", ");
 
   return (
