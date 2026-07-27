@@ -21,7 +21,7 @@ const communityMap: CommunityMap = {
     title: "Star and Contribute",
     description: <>All Runme code is open source and APL-2.0 licensed. We love contributions.</>,
     icon: <FontAwesomeIcon icon={faStar} size="2xl" className="group-hover:text-yellow-400" />,
-    href: "https://github.com/stateful",
+    href: "https://github.com/runmedev",
   },
   community: {
     title: "Join the community",

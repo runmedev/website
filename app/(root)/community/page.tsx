@@ -81,7 +81,7 @@ const COMMUNITY_SECTIONS: CommunitySection[] = [
     heading: "Help and support to get Runme working for you",
     description:
       "Runme is comprised of a few different code repositories on GitHub, and we work hard to make them approachable by eating our own dogfood. We really want to support contributors, so give it a try and don't be afraid to ask for help.",
-    link: "https://github.com/stateful",
+    link: "https://github.com/runmedev",
   },
   // {
   //   icon: (
@@ -144,7 +144,7 @@ const COMMUNITY_SECTIONS: CommunitySection[] = [
     heading: "Resources",
     description:
       "Access the complete documentation, explore the CLI interface, and use the GitHub Action to seamlessly integrate Runme into CI.",
-    link: "https://github.com/stateful",
+    link: "https://github.com/runmedev",
   },
 ];
 
