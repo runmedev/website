@@ -11,6 +11,7 @@ import {
 // import { Analytics } from "@vercel/analytics/react";
 
 import Tags from "@/components/Tags";
+import ScarfPixel from "@/components/ScarfPixel";
 import { Providers } from "@/components/Providers";
 import type { ReactNode } from "react";
 import type { Metadata } from "next";
@@ -121,6 +122,7 @@ export default function RootLayout({ children }: { children: ReactNode }) {
             {/* <Analytics /> */}
           </Providers>
         </div>
+        <ScarfPixel />
       </body>
     </html>
   );
