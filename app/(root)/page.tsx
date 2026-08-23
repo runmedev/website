@@ -301,14 +301,16 @@ const Hero = () => {
   return (
     <div className="flex flex-col space-y-3 text-center px-4 md:px-0">
       <a
-        href="/blog/runme-eval"
+        href="https://visr.dev/?utm_source=runme.dev&utm_medium=banner&utm_campaign=visr-launch"
+        target="_blank"
+        rel="noopener noreferrer"
         className="group mx-auto inline-flex max-w-full items-center justify-center"
       >
         <div className="flex flex-wrap items-center justify-center gap-2 rounded-full border border-yellow-400 bg-neutral-950/80 px-3 py-2 text-sm text-gray-200 shadow-lg shadow-yellow-400/30 hover:bg-neutral-900 md:px-4 md:text-base">
           <span className="rounded-full bg-yellow-400 px-2 py-0.5 text-xs font-semibold uppercase tracking-wide text-black ring-1 ring-yellow-300">
-            New post
+            $10 free
           </span>
-          <span>Sure, Your Claude Is Doing Amazing Things. Prove It. →</span>
+          <span>Runme made your docs executable. Visr keeps agents honest. →</span>
         </div>
       </a>
       <h1 className="font-plexSans text-3xl sm:text-4xl md:text-[56px] text-center md:leading-tight tracking-wider">
